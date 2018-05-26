@@ -2,7 +2,7 @@ library  ieee;
 use ieee.std_logic_1164.all;
 
 entity ffjk is 
-port(j,k: in std_logic;
+port(j,k, clear: in std_logic;
 		clock: in std_logic;
 		q,qbar: out std_logic);
 end ffjk;
@@ -12,7 +12,9 @@ signal qsignal: std_logic;
 begin
 	process(clock)
 	begin
-		if(clock'event and clock = '0') then
+	if(clear='0') then
+		qsignal <= '0';
+	elsif(clock'event and clock = '0') then
 			if(j='0' and k='0') then
 				qsignal <= not qsignal;
 			elsif(j='0' and k='1') then
