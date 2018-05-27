@@ -19,7 +19,7 @@ end component;
 signal saida_cont : std_logic_vector(6 downto 0);
 
 begin
- CONT : cont_df port map(clock, clock, saida_cont);
+ CONT : cont_df port map(clock, clock, saida_cont); -- mesmos clocks para teste
  
  saida_rel <= saida_cont;
 

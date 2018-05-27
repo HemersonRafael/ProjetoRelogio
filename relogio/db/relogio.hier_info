@@ -1,4 +1,16 @@
-|cont_df
+|relogio
+clock => cont_df:CONT.clock
+clock => cont_df:CONT.clock_dec
+saida_rel[0] <= cont_df:CONT.seg_uni[0]
+saida_rel[1] <= cont_df:CONT.seg_uni[1]
+saida_rel[2] <= cont_df:CONT.seg_uni[2]
+saida_rel[3] <= cont_df:CONT.seg_uni[3]
+saida_rel[4] <= cont_df:CONT.seg_uni[4]
+saida_rel[5] <= cont_df:CONT.seg_uni[5]
+saida_rel[6] <= cont_df:CONT.seg_uni[6]
+
+
+|relogio|cont_df:CONT
 clock => ffjk:FF0.clock
 clock_dec => ffjk:FF4.clock
 seg_uni[0] <= converte_7seg:CC7.segmentos[0]
@@ -13,59 +25,59 @@ seg_dec[1] <= ffjk:FF5.q
 seg_dec[2] <= ffjk:FF6.q
 
 
-|cont_df|ffjk:FF0
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF0
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF1
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF1
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF2
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF2
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF3
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF3
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|converte_7seg:CC7
+|relogio|cont_df:CONT|converte_7seg:CC7
 bcd[0] => Mux0.IN19
 bcd[0] => Mux1.IN19
 bcd[0] => Mux2.IN19
@@ -103,39 +115,39 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF4
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF4
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF5
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF5
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cont_df|ffjk:FF6
-j => process_0~2.IN0
-j => process_0~1.IN0
-j => process_0~0.IN0
-k => process_0~1.IN1
-k => process_0~2.IN1
-k => process_0~0.IN1
+|relogio|cont_df:CONT|ffjk:FF6
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
 clear => qsignal.ACLR
 clock => qsignal.CLK
 q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
