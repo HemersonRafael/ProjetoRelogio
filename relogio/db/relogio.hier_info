@@ -1,0 +1,144 @@
+|cont_df
+clock => ffjk:FF0.clock
+clock_dec => ffjk:FF4.clock
+seg_uni[0] <= converte_7seg:CC7.segmentos[0]
+seg_uni[1] <= converte_7seg:CC7.segmentos[1]
+seg_uni[2] <= converte_7seg:CC7.segmentos[2]
+seg_uni[3] <= converte_7seg:CC7.segmentos[3]
+seg_uni[4] <= converte_7seg:CC7.segmentos[4]
+seg_uni[5] <= converte_7seg:CC7.segmentos[5]
+seg_uni[6] <= converte_7seg:CC7.segmentos[6]
+seg_dec[0] <= ffjk:FF4.q
+seg_dec[1] <= ffjk:FF5.q
+seg_dec[2] <= ffjk:FF6.q
+
+
+|cont_df|ffjk:FF0
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF1
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF2
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF3
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|converte_7seg:CC7
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF4
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF5
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont_df|ffjk:FF6
+j => process_0~2.IN0
+j => process_0~1.IN0
+j => process_0~0.IN0
+k => process_0~1.IN1
+k => process_0~2.IN1
+k => process_0~0.IN1
+clear => qsignal.ACLR
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+

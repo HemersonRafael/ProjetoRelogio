@@ -1,0 +1,1862 @@
+TimeQuest Timing Analyzer report for relogio
+Sat May 26 21:10:30 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'ffjk:FF2|qsignal'
+ 12. Slow Model Setup: 'ffjk:FF5|qsignal'
+ 13. Slow Model Setup: 'ffjk:FF0|qsignal'
+ 14. Slow Model Setup: 'ffjk:FF4|qsignal'
+ 15. Slow Model Setup: 'ffjk:FF1|qsignal'
+ 16. Slow Model Setup: 'clock_dec'
+ 17. Slow Model Setup: 'clock'
+ 18. Slow Model Hold: 'clock'
+ 19. Slow Model Hold: 'clock_dec'
+ 20. Slow Model Hold: 'ffjk:FF1|qsignal'
+ 21. Slow Model Hold: 'ffjk:FF0|qsignal'
+ 22. Slow Model Hold: 'ffjk:FF4|qsignal'
+ 23. Slow Model Hold: 'ffjk:FF2|qsignal'
+ 24. Slow Model Hold: 'ffjk:FF5|qsignal'
+ 25. Slow Model Recovery: 'ffjk:FF4|qsignal'
+ 26. Slow Model Recovery: 'ffjk:FF2|qsignal'
+ 27. Slow Model Recovery: 'ffjk:FF5|qsignal'
+ 28. Slow Model Recovery: 'ffjk:FF0|qsignal'
+ 29. Slow Model Recovery: 'ffjk:FF1|qsignal'
+ 30. Slow Model Recovery: 'clock_dec'
+ 31. Slow Model Recovery: 'clock'
+ 32. Slow Model Removal: 'clock'
+ 33. Slow Model Removal: 'clock_dec'
+ 34. Slow Model Removal: 'ffjk:FF1|qsignal'
+ 35. Slow Model Removal: 'ffjk:FF5|qsignal'
+ 36. Slow Model Removal: 'ffjk:FF4|qsignal'
+ 37. Slow Model Removal: 'ffjk:FF0|qsignal'
+ 38. Slow Model Removal: 'ffjk:FF2|qsignal'
+ 39. Slow Model Minimum Pulse Width: 'clock'
+ 40. Slow Model Minimum Pulse Width: 'clock_dec'
+ 41. Slow Model Minimum Pulse Width: 'ffjk:FF0|qsignal'
+ 42. Slow Model Minimum Pulse Width: 'ffjk:FF1|qsignal'
+ 43. Slow Model Minimum Pulse Width: 'ffjk:FF2|qsignal'
+ 44. Slow Model Minimum Pulse Width: 'ffjk:FF4|qsignal'
+ 45. Slow Model Minimum Pulse Width: 'ffjk:FF5|qsignal'
+ 46. Clock to Output Times
+ 47. Minimum Clock to Output Times
+ 48. Fast Model Setup Summary
+ 49. Fast Model Hold Summary
+ 50. Fast Model Recovery Summary
+ 51. Fast Model Removal Summary
+ 52. Fast Model Minimum Pulse Width Summary
+ 53. Fast Model Setup: 'ffjk:FF2|qsignal'
+ 54. Fast Model Setup: 'ffjk:FF5|qsignal'
+ 55. Fast Model Setup: 'ffjk:FF0|qsignal'
+ 56. Fast Model Setup: 'ffjk:FF4|qsignal'
+ 57. Fast Model Setup: 'ffjk:FF1|qsignal'
+ 58. Fast Model Setup: 'clock_dec'
+ 59. Fast Model Setup: 'clock'
+ 60. Fast Model Hold: 'clock'
+ 61. Fast Model Hold: 'clock_dec'
+ 62. Fast Model Hold: 'ffjk:FF1|qsignal'
+ 63. Fast Model Hold: 'ffjk:FF4|qsignal'
+ 64. Fast Model Hold: 'ffjk:FF0|qsignal'
+ 65. Fast Model Hold: 'ffjk:FF2|qsignal'
+ 66. Fast Model Hold: 'ffjk:FF5|qsignal'
+ 67. Fast Model Recovery: 'ffjk:FF4|qsignal'
+ 68. Fast Model Recovery: 'ffjk:FF2|qsignal'
+ 69. Fast Model Recovery: 'ffjk:FF5|qsignal'
+ 70. Fast Model Recovery: 'ffjk:FF0|qsignal'
+ 71. Fast Model Recovery: 'ffjk:FF1|qsignal'
+ 72. Fast Model Recovery: 'clock_dec'
+ 73. Fast Model Recovery: 'clock'
+ 74. Fast Model Removal: 'clock'
+ 75. Fast Model Removal: 'clock_dec'
+ 76. Fast Model Removal: 'ffjk:FF1|qsignal'
+ 77. Fast Model Removal: 'ffjk:FF5|qsignal'
+ 78. Fast Model Removal: 'ffjk:FF4|qsignal'
+ 79. Fast Model Removal: 'ffjk:FF0|qsignal'
+ 80. Fast Model Removal: 'ffjk:FF2|qsignal'
+ 81. Fast Model Minimum Pulse Width: 'clock'
+ 82. Fast Model Minimum Pulse Width: 'clock_dec'
+ 83. Fast Model Minimum Pulse Width: 'ffjk:FF0|qsignal'
+ 84. Fast Model Minimum Pulse Width: 'ffjk:FF1|qsignal'
+ 85. Fast Model Minimum Pulse Width: 'ffjk:FF2|qsignal'
+ 86. Fast Model Minimum Pulse Width: 'ffjk:FF4|qsignal'
+ 87. Fast Model Minimum Pulse Width: 'ffjk:FF5|qsignal'
+ 88. Clock to Output Times
+ 89. Minimum Clock to Output Times
+ 90. Multicorner Timing Analysis Summary
+ 91. Clock to Output Times
+ 92. Minimum Clock to Output Times
+ 93. Setup Transfers
+ 94. Hold Transfers
+ 95. Recovery Transfers
+ 96. Removal Transfers
+ 97. Report TCCS
+ 98. Report RSKM
+ 99. Unconstrained Paths
+100. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; relogio                                            ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C35F672C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                             ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; Clock Name       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets              ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; clock            ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock }            ;
+; clock_dec        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_dec }        ;
+; ffjk:FF0|qsignal ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ffjk:FF0|qsignal } ;
+; ffjk:FF1|qsignal ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ffjk:FF1|qsignal } ;
+; ffjk:FF2|qsignal ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ffjk:FF2|qsignal } ;
+; ffjk:FF4|qsignal ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ffjk:FF4|qsignal } ;
+; ffjk:FF5|qsignal ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ffjk:FF5|qsignal } ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                 ;
++-------------+-----------------+------------------+------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name       ; Note                                                 ;
++-------------+-----------------+------------------+------------------------------------------------------+
+; 1610.31 MHz ; 500.0 MHz       ; ffjk:FF2|qsignal ; limit due to low minimum pulse width violation (tcl) ;
+; 1610.31 MHz ; 500.0 MHz       ; ffjk:FF5|qsignal ; limit due to low minimum pulse width violation (tcl) ;
++-------------+-----------------+------------------+------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------+
+; Slow Model Setup Summary                 ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; ffjk:FF2|qsignal ; 0.379 ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.379 ; 0.000         ;
+; ffjk:FF0|qsignal ; 0.963 ; 0.000         ;
+; ffjk:FF4|qsignal ; 0.963 ; 0.000         ;
+; ffjk:FF1|qsignal ; 1.387 ; 0.000         ;
+; clock_dec        ; 2.257 ; 0.000         ;
+; clock            ; 2.492 ; 0.000         ;
++------------------+-------+---------------+
+
+
++-------------------------------------------+
+; Slow Model Hold Summary                   ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -2.222 ; -2.222        ;
+; clock_dec        ; -1.987 ; -1.987        ;
+; ffjk:FF1|qsignal ; -1.117 ; -1.117        ;
+; ffjk:FF0|qsignal ; -0.693 ; -0.693        ;
+; ffjk:FF4|qsignal ; -0.693 ; -0.693        ;
+; ffjk:FF2|qsignal ; 0.391  ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.391  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Slow Model Recovery Summary               ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; ffjk:FF4|qsignal ; -1.288 ; -1.288        ;
+; ffjk:FF2|qsignal ; -1.272 ; -1.272        ;
+; ffjk:FF5|qsignal ; -1.243 ; -1.243        ;
+; ffjk:FF0|qsignal ; -1.148 ; -1.148        ;
+; ffjk:FF1|qsignal ; -0.876 ; -0.876        ;
+; clock_dec        ; 0.006  ; 0.000         ;
+; clock            ; 0.381  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Slow Model Removal Summary                ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -1.055 ; -1.055        ;
+; clock_dec        ; -0.936 ; -0.936        ;
+; ffjk:FF1|qsignal ; 0.202  ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.313  ; 0.000         ;
+; ffjk:FF4|qsignal ; 0.358  ; 0.000         ;
+; ffjk:FF0|qsignal ; 0.474  ; 0.000         ;
+; ffjk:FF2|qsignal ; 0.598  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Slow Model Minimum Pulse Width Summary    ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -1.380 ; -2.380        ;
+; clock_dec        ; -1.380 ; -2.380        ;
+; ffjk:FF0|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF1|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF2|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF4|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF5|qsignal ; -0.500 ; -1.000        ;
++------------------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'ffjk:FF2|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.379 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.000      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'ffjk:FF5|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.379 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.000      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'ffjk:FF0|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.963 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.834      ; 0.657      ;
+; 1.463 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.834      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'ffjk:FF4|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.963 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.834      ; 0.657      ;
+; 1.463 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.834      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'ffjk:FF1|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 1.387 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 1.258      ; 0.657      ;
+; 1.887 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 1.258      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_dec'                                                                                         ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 2.257 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.500        ; 2.128      ; 0.657      ;
+; 2.757 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 1.000        ; 2.128      ; 0.657      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock'                                                                                             ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 2.492 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.500        ; 2.363      ; 0.657      ;
+; 2.992 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 1.000        ; 2.363      ; 0.657      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock'                                                                                               ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -2.222 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.000        ; 2.363      ; 0.657      ;
+; -1.722 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; -0.500       ; 2.363      ; 0.657      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_dec'                                                                                           ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -1.987 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.000        ; 2.128      ; 0.657      ;
+; -1.487 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; -0.500       ; 2.128      ; 0.657      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'ffjk:FF1|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.117 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 1.258      ; 0.657      ;
+; -0.617 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 1.258      ; 0.657      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'ffjk:FF0|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.693 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.834      ; 0.657      ;
+; -0.193 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.834      ; 0.657      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'ffjk:FF4|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.693 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.834      ; 0.657      ;
+; -0.193 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.834      ; 0.657      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'ffjk:FF2|qsignal'                                                                                        ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.391 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.000      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'ffjk:FF5|qsignal'                                                                                        ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.391 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.000      ; 0.657      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'ffjk:FF4|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.288 ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; -0.182     ; 2.142      ;
+; -0.217 ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.834      ; 1.837      ;
+; -0.088 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.834      ; 1.708      ;
+; 0.283  ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.834      ; 1.837      ;
+; 0.412  ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.834      ; 1.708      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'ffjk:FF2|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.272 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.000      ; 2.308      ;
+; -0.436 ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.862      ; 2.084      ;
+; -0.354 ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.862      ; 2.002      ;
+; -0.328 ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.862      ; 1.976      ;
+; 0.064  ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.862      ; 2.084      ;
+; 0.146  ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.862      ; 2.002      ;
+; 0.172  ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.862      ; 1.976      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'ffjk:FF5|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.243 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.000      ; 2.279      ;
+; -0.172 ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0.500        ; 1.016      ; 1.974      ;
+; -0.043 ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.500        ; 1.016      ; 1.845      ;
+; 0.328  ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 1.016      ; 1.974      ;
+; 0.457  ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 1.016      ; 1.845      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'ffjk:FF0|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -1.148 ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 1.000        ; -0.028     ; 2.156      ;
+; -0.312 ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.834      ; 1.932      ;
+; -0.230 ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.834      ; 1.850      ;
+; -0.204 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.834      ; 1.824      ;
+; 0.188  ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.834      ; 1.932      ;
+; 0.270  ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.834      ; 1.850      ;
+; 0.296  ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.834      ; 1.824      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'ffjk:FF1|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.876 ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.396      ; 2.308      ;
+; -0.040 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 1.258      ; 2.084      ;
+; 0.042  ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 1.258      ; 2.002      ;
+; 0.068  ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 1.258      ; 1.976      ;
+; 0.460  ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 1.258      ; 2.084      ;
+; 0.542  ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 1.258      ; 2.002      ;
+; 0.568  ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 1.258      ; 1.976      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'clock_dec'                                                                                      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 0.006 ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 1.000        ; 1.112      ; 2.142      ;
+; 1.077 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.500        ; 2.128      ; 1.837      ;
+; 1.206 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.500        ; 2.128      ; 1.708      ;
+; 1.577 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 1.000        ; 2.128      ; 1.837      ;
+; 1.706 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 1.000        ; 2.128      ; 1.708      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'clock'                                                                                          ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 0.381 ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 1.000        ; 1.501      ; 2.156      ;
+; 1.217 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.500        ; 2.363      ; 1.932      ;
+; 1.299 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.500        ; 2.363      ; 1.850      ;
+; 1.325 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 0.500        ; 2.363      ; 1.824      ;
+; 1.717 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 1.000        ; 2.363      ; 1.932      ;
+; 1.799 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 1.000        ; 2.363      ; 1.850      ;
+; 1.825 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 1.000        ; 2.363      ; 1.824      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'clock'                                                                                            ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -1.055 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 0.000        ; 2.363      ; 1.824      ;
+; -1.029 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.000        ; 2.363      ; 1.850      ;
+; -0.947 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.000        ; 2.363      ; 1.932      ;
+; -0.555 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; -0.500       ; 2.363      ; 1.824      ;
+; -0.529 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; -0.500       ; 2.363      ; 1.850      ;
+; -0.447 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; -0.500       ; 2.363      ; 1.932      ;
+; 0.389  ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.000        ; 1.501      ; 2.156      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'clock_dec'                                                                                        ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -0.936 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.000        ; 2.128      ; 1.708      ;
+; -0.807 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.000        ; 2.128      ; 1.837      ;
+; -0.436 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; -0.500       ; 2.128      ; 1.708      ;
+; -0.307 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; -0.500       ; 2.128      ; 1.837      ;
+; 0.764  ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.000        ; 1.112      ; 2.142      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'ffjk:FF1|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.202 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 1.258      ; 1.976      ;
+; 0.228 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 1.258      ; 2.002      ;
+; 0.310 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 1.258      ; 2.084      ;
+; 0.702 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 1.258      ; 1.976      ;
+; 0.728 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 1.258      ; 2.002      ;
+; 0.810 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 1.258      ; 2.084      ;
+; 1.646 ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.396      ; 2.308      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'ffjk:FF5|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.313 ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 1.016      ; 1.845      ;
+; 0.442 ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 1.016      ; 1.974      ;
+; 0.813 ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; -0.500       ; 1.016      ; 1.845      ;
+; 0.942 ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; -0.500       ; 1.016      ; 1.974      ;
+; 2.013 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.000      ; 2.279      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'ffjk:FF4|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.358 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.834      ; 1.708      ;
+; 0.487 ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.834      ; 1.837      ;
+; 0.858 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.834      ; 1.708      ;
+; 0.987 ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.834      ; 1.837      ;
+; 2.058 ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; -0.182     ; 2.142      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'ffjk:FF0|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.474 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.834      ; 1.824      ;
+; 0.500 ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.834      ; 1.850      ;
+; 0.582 ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.834      ; 1.932      ;
+; 0.974 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.834      ; 1.824      ;
+; 1.000 ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.834      ; 1.850      ;
+; 1.082 ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.834      ; 1.932      ;
+; 1.918 ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.000        ; -0.028     ; 2.156      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'ffjk:FF2|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.598 ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.862      ; 1.976      ;
+; 0.624 ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.862      ; 2.002      ;
+; 0.706 ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.862      ; 2.084      ;
+; 1.098 ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.862      ; 1.976      ;
+; 1.124 ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.862      ; 2.002      ;
+; 1.206 ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.862      ; 2.084      ;
+; 2.042 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.000      ; 2.308      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Fall       ; ffjk:FF0|qsignal ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Fall       ; ffjk:FF0|qsignal ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; FF0|qsignal|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; FF0|qsignal|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout    ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_dec'                                                            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock_dec ; Rise       ; clock_dec         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_dec ; Fall       ; ffjk:FF4|qsignal  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_dec ; Fall       ; ffjk:FF4|qsignal  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_dec ; Rise       ; FF4|qsignal|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_dec ; Rise       ; FF4|qsignal|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_dec ; Rise       ; clock_dec|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_dec ; Rise       ; clock_dec|combout ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ffjk:FF0|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Fall       ; ffjk:FF1|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Fall       ; ffjk:FF1|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Rise       ; FF0|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Rise       ; FF0|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Rise       ; FF1|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Rise       ; FF1|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ffjk:FF1|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Fall       ; ffjk:FF2|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Fall       ; ffjk:FF2|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Rise       ; FF1|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Rise       ; FF1|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Rise       ; FF2|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Rise       ; FF2|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ffjk:FF2|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Fall       ; ffjk:FF3|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Fall       ; ffjk:FF3|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Rise       ; FF2|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Rise       ; FF2|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Rise       ; FF3|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Rise       ; FF3|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ffjk:FF4|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Fall       ; ffjk:FF5|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Fall       ; ffjk:FF5|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Rise       ; FF4|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Rise       ; FF4|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Rise       ; FF5|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Rise       ; FF5|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ffjk:FF5|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Fall       ; ffjk:FF6|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Fall       ; ffjk:FF6|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Rise       ; FF5|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Rise       ; FF5|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Rise       ; FF6|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Rise       ; FF6|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.481 ; 4.304 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 4.295 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 4.017 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 4.481 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 4.019 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.304 ; 4.481 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 4.295 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 4.017 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 4.481 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 4.019 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.616 ; 4.777 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 4.777 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 4.558 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.777 ; 4.616 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 4.777 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 4.558 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 4.202 ; 4.307 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 4.016 ; 4.016 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 4.307 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 4.202 ; 4.202 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 4.025 ; 4.025 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 4.294 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 3.994 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 5.267 ; 5.267 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 5.422 ; 5.422 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 5.231 ; 5.231 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 5.207 ; 5.207 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 5.199 ; 5.199 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 4.952 ; 4.952 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 3.657 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 4.952 ; 4.952 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.017 ; 4.019 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 4.295 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 4.017 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 4.481 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 4.019 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.019 ; 4.017 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 4.295 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 4.017 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 4.481 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 4.019 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.383 ; 4.558 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 4.777 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 4.558 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.558 ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 4.777 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 4.558 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 4.016 ; 4.016 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 4.307 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 4.202 ; 4.202 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 4.025 ; 4.025 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 4.294 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 3.994 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 4.016 ; 4.016 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 4.307 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 4.202 ; 4.202 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 4.025 ; 4.025 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 4.294 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 5.207 ; 3.994 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 4.952 ; 3.657 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 3.657 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 4.952 ; 4.952 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++------------------------------------------+
+; Fast Model Setup Summary                 ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; ffjk:FF2|qsignal ; 0.665 ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.665 ; 0.000         ;
+; ffjk:FF0|qsignal ; 0.779 ; 0.000         ;
+; ffjk:FF4|qsignal ; 0.780 ; 0.000         ;
+; ffjk:FF1|qsignal ; 0.968 ; 0.000         ;
+; clock_dec        ; 1.458 ; 0.000         ;
+; clock            ; 1.564 ; 0.000         ;
++------------------+-------+---------------+
+
+
++-------------------------------------------+
+; Fast Model Hold Summary                   ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -1.184 ; -1.184        ;
+; clock_dec        ; -1.078 ; -1.078        ;
+; ffjk:FF1|qsignal ; -0.588 ; -0.588        ;
+; ffjk:FF4|qsignal ; -0.400 ; -0.400        ;
+; ffjk:FF0|qsignal ; -0.399 ; -0.399        ;
+; ffjk:FF2|qsignal ; 0.215  ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.215  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Fast Model Recovery Summary               ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; ffjk:FF4|qsignal ; -0.161 ; -0.161        ;
+; ffjk:FF2|qsignal ; -0.152 ; -0.152        ;
+; ffjk:FF5|qsignal ; -0.148 ; -0.148        ;
+; ffjk:FF0|qsignal ; -0.096 ; -0.096        ;
+; ffjk:FF1|qsignal ; 0.019  ; 0.000         ;
+; clock_dec        ; 0.517  ; 0.000         ;
+; clock            ; 0.689  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Fast Model Removal Summary                ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -0.577 ; -0.577        ;
+; clock_dec        ; -0.541 ; -0.541        ;
+; ffjk:FF1|qsignal ; 0.093  ; 0.000         ;
+; ffjk:FF5|qsignal ; 0.124  ; 0.000         ;
+; ffjk:FF4|qsignal ; 0.137  ; 0.000         ;
+; ffjk:FF0|qsignal ; 0.208  ; 0.000         ;
+; ffjk:FF2|qsignal ; 0.264  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Fast Model Minimum Pulse Width Summary    ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock            ; -1.380 ; -2.380        ;
+; clock_dec        ; -1.380 ; -2.380        ;
+; ffjk:FF0|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF1|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF2|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF4|qsignal ; -0.500 ; -1.000        ;
+; ffjk:FF5|qsignal ; -0.500 ; -1.000        ;
++------------------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'ffjk:FF2|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.665 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.000      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'ffjk:FF5|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.665 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.000      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'ffjk:FF0|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.779 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.473      ; 0.367      ;
+; 1.279 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.473      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'ffjk:FF4|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.780 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.474      ; 0.367      ;
+; 1.280 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.474      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'ffjk:FF1|qsignal'                                                                                       ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.968 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 0.662      ; 0.367      ;
+; 1.468 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.662      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_dec'                                                                                         ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 1.458 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.500        ; 1.152      ; 0.367      ;
+; 1.958 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 1.000        ; 1.152      ; 0.367      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock'                                                                                             ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 1.564 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.500        ; 1.258      ; 0.367      ;
+; 2.064 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 1.000        ; 1.258      ; 0.367      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock'                                                                                               ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -1.184 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.000        ; 1.258      ; 0.367      ;
+; -0.684 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; -0.500       ; 1.258      ; 0.367      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_dec'                                                                                           ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -1.078 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.000        ; 1.152      ; 0.367      ;
+; -0.578 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; -0.500       ; 1.152      ; 0.367      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'ffjk:FF1|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.588 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.662      ; 0.367      ;
+; -0.088 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 0.662      ; 0.367      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'ffjk:FF4|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.400 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.474      ; 0.367      ;
+; 0.100  ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.474      ; 0.367      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'ffjk:FF0|qsignal'                                                                                         ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.399 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.473      ; 0.367      ;
+; 0.101  ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.473      ; 0.367      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'ffjk:FF2|qsignal'                                                                                        ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.215 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.000      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'ffjk:FF5|qsignal'                                                                                        ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.215 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.000      ; 0.367      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'ffjk:FF4|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.161 ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; -0.079     ; 1.114      ;
+; 0.194  ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.474      ; 0.953      ;
+; 0.243  ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.500        ; 0.474      ; 0.904      ;
+; 0.694  ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.474      ; 0.953      ;
+; 0.743  ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 1.000        ; 0.474      ; 0.904      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'ffjk:FF2|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.152 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.000      ; 1.184      ;
+; 0.067  ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.491      ; 1.097      ;
+; 0.115  ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.491      ; 1.049      ;
+; 0.116  ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0.500        ; 0.491      ; 1.048      ;
+; 0.567  ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.491      ; 1.097      ;
+; 0.615  ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.491      ; 1.049      ;
+; 0.616  ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 1.000        ; 0.491      ; 1.048      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'ffjk:FF5|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.148 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.000      ; 1.180      ;
+; 0.207  ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0.500        ; 0.553      ; 1.019      ;
+; 0.256  ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.500        ; 0.553      ; 0.970      ;
+; 0.707  ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.553      ; 1.019      ;
+; 0.756  ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 1.000        ; 0.553      ; 0.970      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'ffjk:FF0|qsignal'                                                                                     ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; -0.096 ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 1.000        ; -0.018     ; 1.110      ;
+; 0.123  ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.473      ; 1.023      ;
+; 0.171  ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.473      ; 0.975      ;
+; 0.172  ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.500        ; 0.473      ; 0.974      ;
+; 0.623  ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.473      ; 1.023      ;
+; 0.671  ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.473      ; 0.975      ;
+; 0.672  ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 1.000        ; 0.473      ; 0.974      ;
++--------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'ffjk:FF1|qsignal'                                                                                    ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.019 ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.171      ; 1.184      ;
+; 0.238 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 0.662      ; 1.097      ;
+; 0.286 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 0.662      ; 1.049      ;
+; 0.287 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0.500        ; 0.662      ; 1.048      ;
+; 0.738 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.662      ; 1.097      ;
+; 0.786 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.662      ; 1.049      ;
+; 0.787 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 1.000        ; 0.662      ; 1.048      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'clock_dec'                                                                                      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 0.517 ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 1.000        ; 0.599      ; 1.114      ;
+; 0.872 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.500        ; 1.152      ; 0.953      ;
+; 0.921 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.500        ; 1.152      ; 0.904      ;
+; 1.372 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 1.000        ; 1.152      ; 0.953      ;
+; 1.421 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 1.000        ; 1.152      ; 0.904      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'clock'                                                                                          ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; 0.689 ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 1.000        ; 0.767      ; 1.110      ;
+; 0.908 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.500        ; 1.258      ; 1.023      ;
+; 0.956 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.500        ; 1.258      ; 0.975      ;
+; 0.957 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 0.500        ; 1.258      ; 0.974      ;
+; 1.408 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 1.000        ; 1.258      ; 1.023      ;
+; 1.456 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 1.000        ; 1.258      ; 0.975      ;
+; 1.457 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 1.000        ; 1.258      ; 0.974      ;
++-------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'clock'                                                                                            ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -0.577 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; 0.000        ; 1.258      ; 0.974      ;
+; -0.576 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.000        ; 1.258      ; 0.975      ;
+; -0.528 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; 0.000        ; 1.258      ; 1.023      ;
+; -0.077 ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; clock       ; -0.500       ; 1.258      ; 0.974      ;
+; -0.076 ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; -0.500       ; 1.258      ; 0.975      ;
+; -0.028 ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; clock       ; -0.500       ; 1.258      ; 1.023      ;
+; 0.191  ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; clock       ; 0.000        ; 0.767      ; 1.110      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'clock_dec'                                                                                        ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+; -0.541 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.000        ; 1.152      ; 0.904      ;
+; -0.492 ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; 0.000        ; 1.152      ; 0.953      ;
+; -0.041 ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; -0.500       ; 1.152      ; 0.904      ;
+; 0.008  ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; clock_dec   ; -0.500       ; 1.152      ; 0.953      ;
+; 0.363  ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; clock_dec   ; 0.000        ; 0.599      ; 1.114      ;
++--------+------------------+------------------+------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'ffjk:FF1|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.093 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.662      ; 1.048      ;
+; 0.094 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.662      ; 1.049      ;
+; 0.142 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.662      ; 1.097      ;
+; 0.593 ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 0.662      ; 1.048      ;
+; 0.594 ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 0.662      ; 1.049      ;
+; 0.642 ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; -0.500       ; 0.662      ; 1.097      ;
+; 0.861 ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0.000        ; 0.171      ; 1.184      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'ffjk:FF5|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.124 ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.553      ; 0.970      ;
+; 0.173 ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.553      ; 1.019      ;
+; 0.624 ; ffjk:FF5|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; -0.500       ; 0.553      ; 0.970      ;
+; 0.673 ; ffjk:FF4|qsignal ; ffjk:FF6|qsignal ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; -0.500       ; 0.553      ; 1.019      ;
+; 1.028 ; ffjk:FF6|qsignal ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0.000        ; 0.000      ; 1.180      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'ffjk:FF4|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.137 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.474      ; 0.904      ;
+; 0.186 ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0.000        ; 0.474      ; 0.953      ;
+; 0.637 ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.474      ; 0.904      ;
+; 0.686 ; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; -0.500       ; 0.474      ; 0.953      ;
+; 1.041 ; ffjk:FF6|qsignal ; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0.000        ; -0.079     ; 1.114      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'ffjk:FF0|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.208 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.473      ; 0.974      ;
+; 0.209 ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.473      ; 0.975      ;
+; 0.257 ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0.000        ; 0.473      ; 1.023      ;
+; 0.708 ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.473      ; 0.974      ;
+; 0.709 ; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.473      ; 0.975      ;
+; 0.757 ; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; -0.500       ; 0.473      ; 1.023      ;
+; 0.976 ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0.000        ; -0.018     ; 1.110      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'ffjk:FF2|qsignal'                                                                                     ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+; 0.264 ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.491      ; 1.048      ;
+; 0.265 ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.491      ; 1.049      ;
+; 0.313 ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.491      ; 1.097      ;
+; 0.764 ; ffjk:FF1|qsignal ; ffjk:FF3|qsignal ; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.491      ; 1.048      ;
+; 0.765 ; ffjk:FF2|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.491      ; 1.049      ;
+; 0.813 ; ffjk:FF0|qsignal ; ffjk:FF3|qsignal ; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; -0.500       ; 0.491      ; 1.097      ;
+; 1.032 ; ffjk:FF3|qsignal ; ffjk:FF3|qsignal ; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0.000        ; 0.000      ; 1.184      ;
++-------+------------------+------------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Fall       ; ffjk:FF0|qsignal ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Fall       ; ffjk:FF0|qsignal ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; FF0|qsignal|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; FF0|qsignal|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout    ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_dec'                                                            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock_dec ; Rise       ; clock_dec         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_dec ; Fall       ; ffjk:FF4|qsignal  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_dec ; Fall       ; ffjk:FF4|qsignal  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_dec ; Rise       ; FF4|qsignal|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_dec ; Rise       ; FF4|qsignal|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_dec ; Rise       ; clock_dec|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_dec ; Rise       ; clock_dec|combout ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ffjk:FF0|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Fall       ; ffjk:FF1|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Fall       ; ffjk:FF1|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Rise       ; FF0|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Rise       ; FF0|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF0|qsignal ; Rise       ; FF1|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF0|qsignal ; Rise       ; FF1|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ffjk:FF1|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Fall       ; ffjk:FF2|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Fall       ; ffjk:FF2|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Rise       ; FF1|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Rise       ; FF1|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF1|qsignal ; Rise       ; FF2|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF1|qsignal ; Rise       ; FF2|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ffjk:FF2|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Fall       ; ffjk:FF3|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Fall       ; ffjk:FF3|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Rise       ; FF2|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Rise       ; FF2|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF2|qsignal ; Rise       ; FF3|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF2|qsignal ; Rise       ; FF3|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ffjk:FF4|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Fall       ; ffjk:FF5|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Fall       ; ffjk:FF5|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Rise       ; FF4|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Rise       ; FF4|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF4|qsignal ; Rise       ; FF5|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF4|qsignal ; Rise       ; FF5|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ffjk:FF5|qsignal'                                                             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Fall       ; ffjk:FF6|qsignal   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Fall       ; ffjk:FF6|qsignal   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Rise       ; FF5|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Rise       ; FF5|qsignal|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ffjk:FF5|qsignal ; Rise       ; FF6|qsignal|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ffjk:FF5|qsignal ; Rise       ; FF6|qsignal|clk    ;
++--------+--------------+----------------+------------------+------------------+------------+--------------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.293 ; 2.245 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 2.237 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 2.093 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 2.293 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 2.094 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.245 ; 2.293 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 2.237 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 2.093 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 2.293 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 2.094 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.381 ; 2.426 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 2.246 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 2.426 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 2.273 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 2.351 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.426 ; 2.381 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 2.246 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 2.426 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 2.273 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 2.351 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.162 ; 2.232 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.106 ; 2.106 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 2.224 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.162 ; 2.162 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.113 ; 2.113 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 2.232 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.108 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.968 ; 2.968 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.799 ; 2.799 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 2.962 ; 2.962 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.855 ; 2.855 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.808 ; 2.808 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 2.968 ; 2.968 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.777 ; 2.777 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.776 ; 2.776 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 2.660 ; 2.660 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 1.939 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 2.660 ; 2.660 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.093 ; 2.094 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 2.237 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 2.093 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 2.293 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 2.094 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.094 ; 2.093 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 2.237 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 2.093 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 2.293 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 2.094 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.246 ; 2.349 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 2.246 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 2.426 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 2.273 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 2.351 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.349 ; 2.246 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 2.246 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 2.426 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 2.273 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 2.351 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.106 ; 2.106 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 2.224 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.162 ; 2.162 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.113 ; 2.113 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 2.232 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.108 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.106 ; 2.106 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 2.224 ; 2.962 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.162 ; 2.162 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.113 ; 2.113 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 2.232 ; 2.968 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.777 ; 2.108 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 2.660 ; 1.939 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 1.939 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 2.660 ; 2.660 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++-------------------+-------+--------+----------+---------+---------------------+
+; Clock             ; Setup ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------+-------+--------+----------+---------+---------------------+
+; Worst-case Slack  ; 0.379 ; -2.222 ; -1.288   ; -1.055  ; -1.380              ;
+;  clock            ; 1.564 ; -2.222 ; 0.381    ; -1.055  ; -1.380              ;
+;  clock_dec        ; 1.458 ; -1.987 ; 0.006    ; -0.936  ; -1.380              ;
+;  ffjk:FF0|qsignal ; 0.779 ; -0.693 ; -1.148   ; 0.208   ; -0.500              ;
+;  ffjk:FF1|qsignal ; 0.968 ; -1.117 ; -0.876   ; 0.093   ; -0.500              ;
+;  ffjk:FF2|qsignal ; 0.379 ; 0.215  ; -1.272   ; 0.264   ; -0.500              ;
+;  ffjk:FF4|qsignal ; 0.780 ; -0.693 ; -1.288   ; 0.137   ; -0.500              ;
+;  ffjk:FF5|qsignal ; 0.379 ; 0.215  ; -1.243   ; 0.124   ; -0.500              ;
+; Design-wide TNS   ; 0.0   ; -6.712 ; -5.827   ; -1.991  ; -9.76               ;
+;  clock            ; 0.000 ; -2.222 ; 0.000    ; -1.055  ; -2.380              ;
+;  clock_dec        ; 0.000 ; -1.987 ; 0.000    ; -0.936  ; -2.380              ;
+;  ffjk:FF0|qsignal ; 0.000 ; -0.693 ; -1.148   ; 0.000   ; -1.000              ;
+;  ffjk:FF1|qsignal ; 0.000 ; -1.117 ; -0.876   ; 0.000   ; -1.000              ;
+;  ffjk:FF2|qsignal ; 0.000 ; 0.000  ; -1.272   ; 0.000   ; -1.000              ;
+;  ffjk:FF4|qsignal ; 0.000 ; -0.693 ; -1.288   ; 0.000   ; -1.000              ;
+;  ffjk:FF5|qsignal ; 0.000 ; 0.000  ; -1.243   ; 0.000   ; -1.000              ;
++-------------------+-------+--------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Clock to Output Times                                                          ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.481 ; 4.304 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 4.295 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 4.017 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 4.481 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 4.019 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 4.304 ; 4.481 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 4.295 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 4.017 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 4.481 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 4.304 ; 4.304 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 4.019 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 4.273 ; 4.273 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 4.266 ; 4.266 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.616 ; 4.777 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 4.777 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 4.383 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 4.558 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 4.777 ; 4.616 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 4.616 ; 4.616 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 4.777 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 4.603 ; 4.603 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 4.383 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 4.596 ; 4.596 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 4.558 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 4.202 ; 4.307 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 4.016 ; 4.016 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 4.307 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 4.202 ; 4.202 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 4.025 ; 4.025 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 4.294 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 3.994 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 3.990 ; 3.990 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 5.267 ; 5.267 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 5.422 ; 5.422 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 5.231 ; 5.231 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 5.599 ; 5.599 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 5.207 ; 5.207 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 5.199 ; 5.199 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 3.609 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 3.609 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 3.657 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 4.952 ; 4.952 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 3.657 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 4.952 ; 4.952 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++--------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                  ;
++-------------+------------------+-------+-------+------------+------------------+
+; Data Port   ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
++-------------+------------------+-------+-------+------------+------------------+
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.093 ; 2.094 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ; 2.237 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ; 2.093 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ; 2.293 ;       ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ;       ; 2.094 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Rise       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Rise       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF0|qsignal ; 2.094 ; 2.093 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[0] ; ffjk:FF0|qsignal ;       ; 2.237 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[1] ; ffjk:FF0|qsignal ;       ; 2.093 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[2] ; ffjk:FF0|qsignal ;       ; 2.293 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[3] ; ffjk:FF0|qsignal ; 2.245 ; 2.245 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[4] ; ffjk:FF0|qsignal ; 2.094 ;       ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[5] ; ffjk:FF0|qsignal ; 2.215 ; 2.215 ; Fall       ; ffjk:FF0|qsignal ;
+;  seg_uni[6] ; ffjk:FF0|qsignal ; 2.209 ; 2.209 ; Fall       ; ffjk:FF0|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.246 ; 2.349 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ; 2.246 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ;       ; 2.426 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ; 2.273 ;       ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Rise       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ;       ; 2.351 ; Rise       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF1|qsignal ; 2.349 ; 2.246 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[0] ; ffjk:FF1|qsignal ; 2.369 ; 2.369 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[1] ; ffjk:FF1|qsignal ;       ; 2.246 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[2] ; ffjk:FF1|qsignal ; 2.426 ;       ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[3] ; ffjk:FF1|qsignal ; 2.381 ; 2.381 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[4] ; ffjk:FF1|qsignal ;       ; 2.273 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[5] ; ffjk:FF1|qsignal ; 2.349 ; 2.349 ; Fall       ; ffjk:FF1|qsignal ;
+;  seg_uni[6] ; ffjk:FF1|qsignal ; 2.351 ;       ; Fall       ; ffjk:FF1|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.106 ; 2.106 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ;       ; 2.224 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.162 ; 2.162 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.113 ; 2.113 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ;       ; 2.232 ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.108 ;       ; Rise       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Rise       ; ffjk:FF2|qsignal ;
+; seg_uni[*]  ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[0] ; ffjk:FF2|qsignal ; 2.106 ; 2.106 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[1] ; ffjk:FF2|qsignal ; 2.224 ; 2.962 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[2] ; ffjk:FF2|qsignal ; 2.162 ; 2.162 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[3] ; ffjk:FF2|qsignal ; 2.113 ; 2.113 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[4] ; ffjk:FF2|qsignal ; 2.232 ; 2.968 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[5] ; ffjk:FF2|qsignal ; 2.777 ; 2.108 ; Fall       ; ffjk:FF2|qsignal ;
+;  seg_uni[6] ; ffjk:FF2|qsignal ; 2.079 ; 2.079 ; Fall       ; ffjk:FF2|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ; 1.903 ;       ; Rise       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+;  seg_dec[0] ; ffjk:FF4|qsignal ;       ; 1.903 ; Fall       ; ffjk:FF4|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ; 1.939 ;       ; Rise       ; ffjk:FF5|qsignal ;
+; seg_dec[*]  ; ffjk:FF5|qsignal ; 2.660 ; 1.939 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[1] ; ffjk:FF5|qsignal ;       ; 1.939 ; Fall       ; ffjk:FF5|qsignal ;
+;  seg_dec[2] ; ffjk:FF5|qsignal ; 2.660 ; 2.660 ; Fall       ; ffjk:FF5|qsignal ;
++-------------+------------------+-------+-------+------------+------------------+
+
+
++---------------------------------------------------------------------------------+
+; Setup Transfers                                                                 ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; ffjk:FF0|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF4|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 0        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 0        ; 1        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Hold Transfers                                                                  ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; ffjk:FF0|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF4|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 0        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 0        ; 1        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Recovery Transfers                                                              ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; ffjk:FF0|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; clock            ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 1        ; 2        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Removal Transfers                                                               ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; ffjk:FF0|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; clock            ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; clock            ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; clock_dec        ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF0|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF1|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF0|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF1|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF2|qsignal ; ffjk:FF2|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF4|qsignal ; 0        ; 0        ; 1        ; 2        ;
+; ffjk:FF4|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 1        ; 1        ;
+; ffjk:FF5|qsignal ; ffjk:FF5|qsignal ; 0        ; 0        ; 1        ; 2        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 31    ; 31   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sat May 26 21:10:22 2018
+Info: Command: quartus_sta relogio -c relogio
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'relogio.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
+    Info (332105): create_clock -period 1.000 -name ffjk:FF1|qsignal ffjk:FF1|qsignal
+    Info (332105): create_clock -period 1.000 -name ffjk:FF0|qsignal ffjk:FF0|qsignal
+    Info (332105): create_clock -period 1.000 -name ffjk:FF2|qsignal ffjk:FF2|qsignal
+    Info (332105): create_clock -period 1.000 -name clock_dec clock_dec
+    Info (332105): create_clock -period 1.000 -name ffjk:FF4|qsignal ffjk:FF4|qsignal
+    Info (332105): create_clock -period 1.000 -name ffjk:FF5|qsignal ffjk:FF5|qsignal
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.379
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.379         0.000 ffjk:FF2|qsignal 
+    Info (332119):     0.379         0.000 ffjk:FF5|qsignal 
+    Info (332119):     0.963         0.000 ffjk:FF0|qsignal 
+    Info (332119):     0.963         0.000 ffjk:FF4|qsignal 
+    Info (332119):     1.387         0.000 ffjk:FF1|qsignal 
+    Info (332119):     2.257         0.000 clock_dec 
+    Info (332119):     2.492         0.000 clock 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -2.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.222        -2.222 clock 
+    Info (332119):    -1.987        -1.987 clock_dec 
+    Info (332119):    -1.117        -1.117 ffjk:FF1|qsignal 
+    Info (332119):    -0.693        -0.693 ffjk:FF0|qsignal 
+    Info (332119):    -0.693        -0.693 ffjk:FF4|qsignal 
+    Info (332119):     0.391         0.000 ffjk:FF2|qsignal 
+    Info (332119):     0.391         0.000 ffjk:FF5|qsignal 
+Info (332146): Worst-case recovery slack is -1.288
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.288        -1.288 ffjk:FF4|qsignal 
+    Info (332119):    -1.272        -1.272 ffjk:FF2|qsignal 
+    Info (332119):    -1.243        -1.243 ffjk:FF5|qsignal 
+    Info (332119):    -1.148        -1.148 ffjk:FF0|qsignal 
+    Info (332119):    -0.876        -0.876 ffjk:FF1|qsignal 
+    Info (332119):     0.006         0.000 clock_dec 
+    Info (332119):     0.381         0.000 clock 
+Info (332146): Worst-case removal slack is -1.055
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.055        -1.055 clock 
+    Info (332119):    -0.936        -0.936 clock_dec 
+    Info (332119):     0.202         0.000 ffjk:FF1|qsignal 
+    Info (332119):     0.313         0.000 ffjk:FF5|qsignal 
+    Info (332119):     0.358         0.000 ffjk:FF4|qsignal 
+    Info (332119):     0.474         0.000 ffjk:FF0|qsignal 
+    Info (332119):     0.598         0.000 ffjk:FF2|qsignal 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -2.380 clock 
+    Info (332119):    -1.380        -2.380 clock_dec 
+    Info (332119):    -0.500        -1.000 ffjk:FF0|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF1|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF2|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF4|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF5|qsignal 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.665
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.665         0.000 ffjk:FF2|qsignal 
+    Info (332119):     0.665         0.000 ffjk:FF5|qsignal 
+    Info (332119):     0.779         0.000 ffjk:FF0|qsignal 
+    Info (332119):     0.780         0.000 ffjk:FF4|qsignal 
+    Info (332119):     0.968         0.000 ffjk:FF1|qsignal 
+    Info (332119):     1.458         0.000 clock_dec 
+    Info (332119):     1.564         0.000 clock 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -1.184
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.184        -1.184 clock 
+    Info (332119):    -1.078        -1.078 clock_dec 
+    Info (332119):    -0.588        -0.588 ffjk:FF1|qsignal 
+    Info (332119):    -0.400        -0.400 ffjk:FF4|qsignal 
+    Info (332119):    -0.399        -0.399 ffjk:FF0|qsignal 
+    Info (332119):     0.215         0.000 ffjk:FF2|qsignal 
+    Info (332119):     0.215         0.000 ffjk:FF5|qsignal 
+Info (332146): Worst-case recovery slack is -0.161
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.161        -0.161 ffjk:FF4|qsignal 
+    Info (332119):    -0.152        -0.152 ffjk:FF2|qsignal 
+    Info (332119):    -0.148        -0.148 ffjk:FF5|qsignal 
+    Info (332119):    -0.096        -0.096 ffjk:FF0|qsignal 
+    Info (332119):     0.019         0.000 ffjk:FF1|qsignal 
+    Info (332119):     0.517         0.000 clock_dec 
+    Info (332119):     0.689         0.000 clock 
+Info (332146): Worst-case removal slack is -0.577
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.577        -0.577 clock 
+    Info (332119):    -0.541        -0.541 clock_dec 
+    Info (332119):     0.093         0.000 ffjk:FF1|qsignal 
+    Info (332119):     0.124         0.000 ffjk:FF5|qsignal 
+    Info (332119):     0.137         0.000 ffjk:FF4|qsignal 
+    Info (332119):     0.208         0.000 ffjk:FF0|qsignal 
+    Info (332119):     0.264         0.000 ffjk:FF2|qsignal 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -2.380 clock 
+    Info (332119):    -1.380        -2.380 clock_dec 
+    Info (332119):    -0.500        -1.000 ffjk:FF0|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF1|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF2|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF4|qsignal 
+    Info (332119):    -0.500        -1.000 ffjk:FF5|qsignal 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4560 megabytes
+    Info: Processing ended: Sat May 26 21:10:30 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:04
+
+
