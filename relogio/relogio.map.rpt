@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio
-Sat May 26 21:34:23 2018
+Mon May 28 23:02:44 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 26 21:34:23 2018      ;
+; Analysis & Synthesis Status        ; Successful - Mon May 28 23:02:44 2018      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; relogio                                    ;
 ; Top-level Entity Name              ; relogio                                    ;
@@ -162,21 +162,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------+---------+
-; relogio.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/relogio.vhd       ;         ;
-; cont_df.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/cont_df.vhd       ;         ;
-; ffjk.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/ffjk.vhd          ;         ;
-; converte_7seg.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/converte_7seg.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; relogio.vhd                      ; yes             ; User VHDL File  ; C:/Users/Hemerson/ProjetoRelogio/relogio/relogio.vhd       ;         ;
+; ffjk.vhd                         ; yes             ; User VHDL File  ; C:/Users/Hemerson/ProjetoRelogio/relogio/ffjk.vhd          ;         ;
+; converte_7seg.vhd                ; yes             ; User VHDL File  ; C:/Users/Hemerson/ProjetoRelogio/relogio/converte_7seg.vhd ;         ;
+; cont_df.vhd                      ; yes             ; User VHDL File  ; C:/Users/Hemerson/ProjetoRelogio/relogio/cont_df.vhd       ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -315,7 +315,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -325,25 +325,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat May 26 21:34:15 2018
+    Info: Processing started: Mon May 28 23:02:42 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (12125): Using design file relogio.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
     Info (12022): Found design unit 1: relogio-hardware
     Info (12023): Found entity 1: relogio
-Info (12127): Elaborating entity "relogio" for the top level hierarchy
-Warning (12125): Using design file cont_df.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: cont_df-hardware
-    Info (12023): Found entity 1: cont_df
-Info (12128): Elaborating entity "cont_df" for hierarchy "cont_df:CONT"
-Warning (12125): Using design file ffjk.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registrador-hardware
+    Info (12023): Found entity 1: registrador
+Info (12021): Found 2 design units, including 1 entities, in source file ffjk.vhd
     Info (12022): Found design unit 1: ffjk-ffjk
     Info (12023): Found entity 1: ffjk
-Info (12128): Elaborating entity "ffjk" for hierarchy "cont_df:CONT|ffjk:FF0"
-Warning (10492): VHDL Process Statement warning at ffjk.vhd(15): signal "clear" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (12125): Using design file converte_7seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+Info (12021): Found 2 design units, including 1 entities, in source file divisorfrequencia.vhd
+    Info (12022): Found design unit 1: DivisorFrequencia-DivisorFrequencia
+    Info (12023): Found entity 1: DivisorFrequencia
+Info (12021): Found 2 design units, including 1 entities, in source file converte_7seg.vhd
     Info (12022): Found design unit 1: converte_7seg-hardware
     Info (12023): Found entity 1: converte_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file cont_df.vhd
+    Info (12022): Found design unit 1: cont_df-hardware
+    Info (12023): Found entity 1: cont_df
+Info (12127): Elaborating entity "relogio" for the top level hierarchy
+Info (12128): Elaborating entity "cont_df" for hierarchy "cont_df:CONT"
+Info (12128): Elaborating entity "ffjk" for hierarchy "cont_df:CONT|ffjk:FF0"
+Warning (10492): VHDL Process Statement warning at ffjk.vhd(15): signal "clear" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "converte_7seg" for hierarchy "cont_df:CONT|converte_7seg:CC7"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -352,10 +358,10 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 12 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4691 megabytes
-    Info: Processing ended: Sat May 26 21:34:24 2018
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4700 megabytes
+    Info: Processing ended: Mon May 28 23:02:44 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

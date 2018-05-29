@@ -1,5 +1,5 @@
 Flow report for relogio
-Sat May 26 21:35:11 2018
+Mon May 28 23:03:08 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sat May 26 21:34:56 2018      ;
+; Flow Status                        ; Successful - Mon May 28 23:03:03 2018      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; relogio                                    ;
 ; Top-level Entity Name              ; relogio                                    ;
@@ -68,22 +68,22 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/26/2018 21:34:17 ;
+; Start date & time ; 05/28/2018 23:02:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; relogio             ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 141761634100313.152738125608312 ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 70465359724804.152755936201468 ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top        ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 4691 MB             ; 00:00:06                           ;
-; Fitter                    ; 00:00:22     ; 1.0                     ; 4996 MB             ; 00:00:19                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4611 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:13     ; 1.0                     ; 4624 MB             ; 00:00:08                           ;
-; Total                     ; 00:00:46     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4697 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 5027 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4629 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +104,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-VJFBRI2  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-VJFBRI2  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-VJFBRI2  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-VJFBRI2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-7QK6K2B  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-7QK6K2B  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-7QK6K2B  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-7QK6K2B  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
