@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hemerson\ProjetoRelogio\relogio\simulation\qsim
+vrelogio
+Z1 INW:=mLBig>a?Rc4zz5g3W2
+Z2 V9<3lcBP:<K<cGPSo??1do0
+Z3 dC:\Users\Hemerson\ProjetoRelogio\relogio\simulation\qsim
+Z4 w1527894895
+Z5 8relogio.vo
+Z6 Frelogio.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 4dGboXGV8F_^bTd=ZW6YB2
+!s85 0
+Z10 !s108 1527894896.886000
+Z11 !s107 relogio.vo|
+Z12 !s90 -work|work|relogio.vo|
+!s101 -O0
+vrelogio_vlg_check_tst
+!i10b 1
+!s100 [<fX_]^FQ`6TEgiU=j=8n3
+IahP_@@AY3EDfZWBR5Y9XH3
+VV[alPa9LYGVCfcF?IlWgC2
+R3
+Z13 w1527894894
+Z14 8relogio.vt
+Z15 Frelogio.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1527894897.143000
+Z17 !s107 relogio.vt|
+Z18 !s90 -work|work|relogio.vt|
+!s101 -O0
+R8
+vrelogio_vlg_sample_tst
+!i10b 1
+!s100 R87F]<W9T<a4o7WTaf=[C3
+I]G8R7G_ZNd0F8]mQIcol61
+VN_D]24]A:Ih<Adfinn<;U2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vrelogio_vlg_vec_tst
+!i10b 1
+!s100 1ZQbUnj@zlI^18fO0[i`60
+IP0oJ6S;P?QbWEXk=95]To3
+VZZ3>XR88@Gf@Y8[F9B8f42
+R3
+R13
+R14
+R15
+L0 259
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

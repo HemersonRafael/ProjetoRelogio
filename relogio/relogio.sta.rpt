@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for relogio
-Mon May 28 23:03:08 2018
+Fri Jun 01 20:14:15 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -518,39 +518,39 @@ HTML report is unavailable in plain text report export.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.609 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.884 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.908 ; 4.830 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.516 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.609 ; 4.516 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.367 ; 4.243 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.520 ; 4.418 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 4.983 ; 4.861 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.744 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.580 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.581 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.831 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.983 ; 4.861 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.630 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.387 ; 4.297 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.540 ; 4.472 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.630 ; 4.570 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.387 ; 4.298 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.540 ; 4.473 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.545 ; 4.592 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.492 ; 4.592 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.542 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.706 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.793 ; 3.706 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.527 ; 4.412 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.545 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.288 ; 4.208 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.394 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.394 ; 4.394 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.525 ; 4.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.538 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.797 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.471 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.797 ; 3.684 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.472 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.530 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.378 ; 4.273 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.389 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 4.279 ; 4.204 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.106 ; 4.202 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.921 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.901 ; 3.921 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.255 ; 4.118 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.279 ; 4.204 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.902 ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.712 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.878 ; 3.775 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 5.174 ; 5.097 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
@@ -558,9 +558,9 @@ HTML report is unavailable in plain text report export.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.852 ; 4.699 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 5.149 ; 4.965 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 5.174 ; 4.997 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.853 ; 4.689 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.611 ; 4.417 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.762 ; 4.591 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.853 ; 4.754 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.611 ; 4.483 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.762 ; 4.656 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -571,52 +571,52 @@ HTML report is unavailable in plain text report export.
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 3.514 ; 4.104 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.514 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.459 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.678 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.723 ; 4.670 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.366 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.226 ; 4.104 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.374 ; 4.273 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.457 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.664 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.686 ; 4.670 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.458 ; 4.366 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.224 ; 4.104 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.372 ; 4.273 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 4.245 ; 3.616 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.616 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.428 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.612 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.822 ; 4.699 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.479 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.822 ; 4.660 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.479 ; 4.418 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.245 ; 4.155 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.393 ; 4.324 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.149 ; 3.572 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.663 ; 3.572 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.281 ; 4.434 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.372 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.572 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.384 ; 4.270 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.398 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.149 ; 4.069 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.218 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.666 ; 4.133 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.336 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.663 ; 3.572 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.382 ; 4.270 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.339 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.101 ; 4.069 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.253 ; 4.218 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.666 ; 3.551 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.349 ; 4.446 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.381 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.666 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.345 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.666 ; 3.551 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.408 ; 4.326 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.379 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.237 ; 4.133 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.362 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.595 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.336 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.237 ; 4.070 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.362 ; 4.244 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.547 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.912 ; 4.059 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.758 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.122 ; 3.987 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.123 ; 4.070 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.784 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.595 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.757 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.830 ; 3.558 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.780 ; 3.758 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.063 ; 3.987 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.087 ; 4.070 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.780 ; 3.784 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.547 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.694 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.830 ; 3.546 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.994 ; 4.092 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.916 ; 4.532 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.176 ; 4.082 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.242 ; 4.104 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.949 ; 4.521 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.450 ; 3.558 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.830 ; 3.755 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.916 ; 3.818 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.176 ; 4.039 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.242 ; 4.068 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.949 ; 3.807 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.378 ; 3.546 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.830 ; 3.714 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -967,39 +967,39 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.142 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.408 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.430 ; 4.312 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.014 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.139 ; 4.014 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.897 ; 3.784 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.063 ; 3.924 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 4.453 ; 4.299 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.347 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.043 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.044 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.271 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.453 ; 4.299 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.129 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.885 ; 3.802 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.051 ; 3.942 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.129 ; 4.033 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.885 ; 3.803 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.051 ; 3.943 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.092 ; 4.134 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.996 ; 4.134 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.091 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.271 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.395 ; 3.271 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.078 ; 3.929 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.092 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.831 ; 3.761 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.957 ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.071 ; 4.148 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.990 ; 4.148 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.996 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.396 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.071 ; 3.952 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.396 ; 3.250 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.071 ; 3.953 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.987 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.867 ; 3.770 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.049 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.049 ; 3.858 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.855 ; 3.784 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.650 ; 3.784 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.462 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.487 ; 3.462 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.833 ; 3.661 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.855 ; 3.741 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.450 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.485 ; 3.450 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.292 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.468 ; 3.332 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 4.628 ; 4.556 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
@@ -1007,9 +1007,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.330 ; 4.157 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.605 ; 4.413 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.628 ; 4.442 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.327 ; 4.145 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.084 ; 3.916 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.249 ; 4.055 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.327 ; 4.196 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.084 ; 3.967 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.249 ; 4.106 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1020,52 +1020,52 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 3.094 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.094 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.008 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.218 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.257 ; 4.166 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.880 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.766 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.931 ; 3.794 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.006 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.204 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.225 ; 4.166 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.004 ; 3.880 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.764 ; 3.654 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.929 ; 3.794 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 3.755 ; 3.230 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.230 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.909 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.072 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.306 ; 4.152 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.994 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.306 ; 4.117 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.994 ; 3.898 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.755 ; 3.672 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 3.919 ; 3.811 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.703 ; 3.150 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.277 ; 3.150 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.807 ; 3.988 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.937 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.150 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.946 ; 3.798 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.958 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.703 ; 3.634 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.757 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.278 ; 3.642 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.905 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.277 ; 3.150 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.944 ; 3.798 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.904 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.662 ; 3.634 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.830 ; 3.757 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 3.278 ; 3.129 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.832 ; 3.963 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.858 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.278 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.826 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.278 ; 3.129 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.940 ; 3.821 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.854 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.738 ; 3.642 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.884 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.180 ; 3.226 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.817 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.738 ; 3.588 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.884 ; 3.732 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.138 ; 3.226 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.476 ; 3.652 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.324 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.711 ; 3.542 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.710 ; 3.618 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.340 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.180 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.360 ; 3.226 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.411 ; 3.134 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.380 ; 3.324 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.657 ; 3.542 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.678 ; 3.618 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.377 ; 3.340 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.138 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.302 ; 3.226 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.411 ; 3.123 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.519 ; 3.649 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.489 ; 4.010 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.726 ; 3.599 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.786 ; 3.621 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.515 ; 3.998 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.939 ; 3.134 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.411 ; 3.297 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.489 ; 3.359 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.726 ; 3.562 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.786 ; 3.589 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.515 ; 3.348 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.882 ; 3.123 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.411 ; 3.261 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1406,7 +1406,7 @@ No synchronizer chains to report.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.729 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.827 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.856 ; 2.903 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.697 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.722 ; 2.697 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.524 ; 2.517 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.665 ; 2.632 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 2.964 ; 2.979 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
@@ -1414,31 +1414,31 @@ No synchronizer chains to report.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.799 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.949 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.964 ; 2.979 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.792 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.792 ; 2.786 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.594 ; 2.606 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.735 ; 2.721 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.698 ; 2.664 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.686 ; 2.650 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.698 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.285 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.237 ; 2.285 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.635 ; 2.664 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.693 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.485 ; 2.499 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.622 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.601 ; 2.622 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.745 ; 2.767 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.744 ; 2.728 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.767 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.243 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.243 ; 2.276 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.686 ; 2.734 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.755 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.590 ; 2.585 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.745 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.745 ; 2.673 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.560 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.484 ; 2.447 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.397 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.362 ; 2.397 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.483 ; 2.498 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.560 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.383 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.354 ; 2.383 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.186 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.333 ; 2.295 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 3.040 ; 3.015 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
@@ -1446,9 +1446,9 @@ No synchronizer chains to report.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.901 ; 2.841 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.010 ; 2.984 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.040 ; 3.015 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.893 ; 2.827 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.696 ; 2.648 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.836 ; 2.761 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.893 ; 2.865 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.696 ; 2.686 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.836 ; 2.800 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1460,51 +1460,51 @@ No synchronizer chains to report.
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 2.160 ; 2.434 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.160 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.644 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.708 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.750 ; 2.808 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.609 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.729 ; 2.808 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.635 ; 2.609 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.441 ; 2.434 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.581 ; 2.546 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 2.507 ; 2.130 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.130 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.708 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.820 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.866 ; 2.882 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.866 ; 2.862 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ; 2.695 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.507 ; 2.519 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.648 ; 2.632 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.404 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.158 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.561 ; 2.559 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.600 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.580 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.158 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.551 ; 2.579 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.607 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.404 ; 2.416 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.517 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.499 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.573 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.376 ; 2.416 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.520 ; 2.517 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.193 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.641 ; 2.606 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.677 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.659 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.193 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.599 ; 2.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.665 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.504 ; 2.499 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.631 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.117 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.647 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.504 ; 2.468 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.631 ; 2.585 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.089 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.370 ; 2.364 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.300 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.406 ; 2.419 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.420 ; 2.479 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.307 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.117 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.263 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.156 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.291 ; 2.300 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.372 ; 2.419 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.400 ; 2.479 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.282 ; 2.307 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.089 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.228 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.150 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.436 ; 2.401 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.373 ; 2.741 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.460 ; 2.492 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.521 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.383 ; 2.727 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.599 ; 2.156 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.281 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.373 ; 2.339 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.460 ; 2.474 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.503 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.383 ; 2.325 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.555 ; 2.150 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.261 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1542,39 +1542,39 @@ No synchronizer chains to report.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.609 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.884 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.908 ; 4.830 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.516 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.609 ; 4.516 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.367 ; 4.243 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.520 ; 4.418 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 4.983 ; 4.861 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 3.744 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.580 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.581 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 4.831 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.983 ; 4.861 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.630 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.387 ; 4.297 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.540 ; 4.472 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.630 ; 4.570 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.387 ; 4.298 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 4.540 ; 4.473 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.545 ; 4.592 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.492 ; 4.592 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.542 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 3.706 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.793 ; 3.706 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.527 ; 4.412 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.545 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.288 ; 4.208 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.394 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.394 ; 4.394 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.525 ; 4.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.538 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.797 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.471 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 3.797 ; 3.684 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.472 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 4.530 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.378 ; 4.273 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 4.552 ; 4.389 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 4.279 ; 4.204 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.106 ; 4.202 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.921 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.901 ; 3.921 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.255 ; 4.118 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.279 ; 4.204 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.902 ; 3.910 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.712 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 3.878 ; 3.775 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 5.174 ; 5.097 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
@@ -1582,9 +1582,9 @@ No synchronizer chains to report.
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.852 ; 4.699 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 5.149 ; 4.965 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 5.174 ; 4.997 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.853 ; 4.689 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.611 ; 4.417 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.762 ; 4.591 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.853 ; 4.754 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.611 ; 4.483 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 4.762 ; 4.656 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1596,51 +1596,51 @@ No synchronizer chains to report.
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 2.160 ; 2.434 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.160 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.644 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.708 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.750 ; 2.808 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.609 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ;       ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.729 ; 2.808 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.635 ; 2.609 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.441 ; 2.434 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.581 ; 2.546 ; Rise       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ; saida_rel[*]  ; cont_df:CONT|ffjk:FF0|qsignal ; 2.507 ; 2.130 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.130 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[1] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.708 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[2] ; cont_df:CONT|ffjk:FF0|qsignal ;       ; 2.820 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.866 ; 2.882 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ;       ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.866 ; 2.862 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.702 ; 2.695 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[5] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.507 ; 2.519 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
 ;  saida_rel[6] ; cont_df:CONT|ffjk:FF0|qsignal ; 2.648 ; 2.632 ; Fall       ; cont_df:CONT|ffjk:FF0|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.404 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.158 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.561 ; 2.559 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.600 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.580 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.158 ; 2.201 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.551 ; 2.579 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.607 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.404 ; 2.416 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.517 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.499 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.573 ;       ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.376 ; 2.416 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.520 ; 2.517 ; Rise       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.193 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.641 ; 2.606 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.677 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.659 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.165 ; 2.193 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
 ;  saida_rel[3] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.599 ; 2.646 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.665 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.504 ; 2.499 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.631 ;       ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.117 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF1|qsignal ;       ; 2.647 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.504 ; 2.468 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF1|qsignal ; 2.631 ; 2.585 ; Fall       ; cont_df:CONT|ffjk:FF1|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.089 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.370 ; 2.364 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.300 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.406 ; 2.419 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.420 ; 2.479 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ;       ; 2.307 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.117 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.263 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
-; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.156 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.291 ; 2.300 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.372 ; 2.419 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.400 ; 2.479 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.282 ; 2.307 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.089 ;       ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.228 ; 2.223 ; Rise       ; cont_df:CONT|ffjk:FF2|qsignal ;
+; saida_rel[*]  ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.150 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 ;  saida_rel[0] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.436 ; 2.401 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.373 ; 2.741 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.460 ; 2.492 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.521 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.383 ; 2.727 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.599 ; 2.156 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
-;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.281 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[1] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.373 ; 2.339 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[2] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.460 ; 2.474 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[3] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.512 ; 2.503 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[4] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.383 ; 2.325 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[5] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.555 ; 2.150 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
+;  saida_rel[6] ; cont_df:CONT|ffjk:FF2|qsignal ; 2.309 ; 2.261 ; Fall       ; cont_df:CONT|ffjk:FF2|qsignal ;
 +---------------+-------------------------------+-------+-------+------------+-------------------------------+
 
 
@@ -1824,7 +1824,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon May 28 23:03:04 2018
+    Info: Processing started: Fri Jun 01 20:14:11 2018
 Info: Command: quartus_sta relogio -c relogio
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1961,8 +1961,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4629 megabytes
-    Info: Processing ended: Mon May 28 23:03:08 2018
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Fri Jun 01 20:14:15 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 

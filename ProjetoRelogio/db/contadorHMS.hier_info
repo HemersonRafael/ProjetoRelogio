@@ -1,0 +1,261 @@
+|contadorHMS
+clock_in_ocilador => divSegundo:DIVS.clock_in
+outS[0] <= ffjk:FF0S.q
+outS[1] <= ffjk:FF1S.q
+outS[2] <= ffjk:FF2S.q
+outS[3] <= ffjk:FF3S.q
+outS[4] <= ffjk:FF4S.q
+outS[5] <= ffjk:FF5S.q
+outM[0] <= ffjk:FF0M.q
+outM[1] <= ffjk:FF1M.q
+outM[2] <= ffjk:FF2M.q
+outM[3] <= ffjk:FF3M.q
+outM[4] <= ffjk:FF4M.q
+outM[5] <= ffjk:FF5M.q
+outH[0] <= ffjk:FF0H.q
+outH[1] <= ffjk:FF1H.q
+outH[2] <= ffjk:FF2H.q
+outH[3] <= ffjk:FF3H.q
+outH[4] <= ffjk:FF4H.q
+
+
+|contadorHMS|divSegundo:DIVS
+clock_in => umSegundo.CLK
+clock_in => cont[0].CLK
+clock_in => cont[1].CLK
+clock_in => cont[2].CLK
+clock_in => cont[3].CLK
+clock_in => cont[4].CLK
+clock_in => cont[5].CLK
+clock_in => cont[6].CLK
+clock_in => cont[7].CLK
+clock_in => cont[8].CLK
+clock_in => cont[9].CLK
+clock_in => cont[10].CLK
+clock_in => cont[11].CLK
+clock_in => cont[12].CLK
+clock_in => cont[13].CLK
+clock_in => cont[14].CLK
+clock_in => cont[15].CLK
+clock_in => cont[16].CLK
+clock_in => cont[17].CLK
+clock_in => cont[18].CLK
+clock_in => cont[19].CLK
+clock_in => cont[20].CLK
+clock_in => cont[21].CLK
+clock_in => cont[22].CLK
+clock_in => cont[23].CLK
+clock_in => cont[24].CLK
+clock_in => cont[25].CLK
+clock_out <= umSegundo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF0S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF1S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF2S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF3S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF4S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF5S
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|divMinuto:DIVM
+clock_in => umMinuto.CLK
+clock_in => contSegundo[0].CLK
+clock_in => contSegundo[1].CLK
+clock_in => contSegundo[2].CLK
+clock_in => contSegundo[3].CLK
+clock_in => contSegundo[4].CLK
+clock_in => contSegundo[5].CLK
+clock_out <= umMinuto.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF0M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF1M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF2M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF3M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF4M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF5M
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|divHora:DIVH
+clock_in => umHora.CLK
+clock_in => contMinuto[0].CLK
+clock_in => contMinuto[1].CLK
+clock_in => contMinuto[2].CLK
+clock_in => contMinuto[3].CLK
+clock_in => contMinuto[4].CLK
+clock_in => contMinuto[5].CLK
+clock_out <= umHora.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF0H
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF1H
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF2H
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF3H
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contadorHMS|ffjk:FF4H
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clock => qsignal.CLK
+q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+

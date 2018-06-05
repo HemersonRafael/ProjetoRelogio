@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hemerson\Documents\FPGA\contadorHMS\simulation\qsim
+vcontadorHMS
+Z1 IhRz8o16TbYH7QF<4<GzW_2
+Z2 VK6_b_izcO9=@3?7b99BYo1
+Z3 dI:\ProjetoRelogio\simulation\qsim
+Z4 w1528163904
+Z5 8contadorHMS.vo
+Z6 FcontadorHMS.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|contadorHMS.vo|
+Z9 o-work work -O0
+Z10 ncontador@h@m@s
+!i10b 1
+Z11 !s100 ]b8W`Mn]Q<9cNJSB4lYjD3
+!s85 0
+Z12 !s108 1528163906.005000
+Z13 !s107 contadorHMS.vo|
+!s101 -O0
+vcontadorHMS_vlg_check_tst
+!i10b 1
+!s100 zB2K]>?5XdaD3AV5D]KC^0
+IX46_ZGWM[CD>2:VT8FhHS2
+VlP^Uh^iWb[4T<Ie07G7B50
+R3
+Z14 w1528163902
+Z15 8contadorHMS.vt
+Z16 FcontadorHMS.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1528163906.648000
+Z18 !s107 contadorHMS.vt|
+Z19 !s90 -work|work|contadorHMS.vt|
+!s101 -O0
+R9
+Z20 ncontador@h@m@s_vlg_check_tst
+vcontadorHMS_vlg_sample_tst
+!i10b 1
+Z21 !s100 Z^jhhzWdRzil2[5TMm>eR3
+Z22 IP0[Z<@YP^DNnVWW0683BW2
+Z23 VO^DjBBAlZm_M>S21j]MoS0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z24 ncontador@h@m@s_vlg_sample_tst
+vcontadorHMS_vlg_vec_tst
+!i10b 1
+!s100 WY1gU5MOPGl?fNkNiYMLX1
+Ilb^?aU<G>hiF3dL_[O[MB0
+Z25 VMWXBk32W9dNPb`:ReN_O10
+R3
+R14
+R15
+R16
+Z26 L0 455
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z27 ncontador@h@m@s_vlg_vec_tst
