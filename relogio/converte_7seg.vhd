@@ -3,23 +3,136 @@ use ieee.std_logic_1164.all;
 
 entity converte_7seg is
 port(
-  bcd      : in std_logic_vector(3 downto 0);  -- vetor de entrada com 4 bits
-  segmentos: out std_logic_vector(6 downto 0));-- vetor de saida que vai receber o valor de entrada representando em 7 bits
+  bcd      : in std_logic_vector(5 downto 0);  -- vetor de entrada com 4 bits
+  segmentos_unid: out std_logic_vector(6 downto 0));-- vetor de saida que vai receber o valor de entrada representando em 7 bits
+  segmentos_dez: out std_logic_vector(6 downto 0));-- vetor de saida que vai receber o valor de entrada representando em 7 bits
 end converte_7seg;
 
 architecture hardware of converte_7seg is
 begin
   with bcd select -- seleciona, dependendo do valor de "bcd", converte o equivalente em 7 bits para "segmentos"
-    segmentos <= "0000001" when "0000",
-                 "1001111" when "0001",
-                 "0010010" when "0010",
-                 "0000110" when "0011",
-                 "1001100" when "0100",
-                 "0100100" when "0101",
-                 "0100000" when "0110",
-                 "0001111" when "0111",
-                 "0000000" when "1000",
-                 "0000100" when "1001",
-					  "1111111" when "1111", -- para blink
-                 "0000001" when others;
+    segmentos_unid <= "0000001" when "000000",
+                 "1001111" when "000001", -- 1
+                 "0010010" when "000010",
+                 "0000110" when "000011",
+                 "1001100" when "000100",
+                 "0100100" when "000101", -- 5
+                 "0100000" when "000110",
+                 "0001111" when "000111",
+                 "0000000" when "001000",
+                 "0000100" when "001001",
+                 "0000001" when "001010", -- 10
+                 "0010010" when "001011",
+                 "0010010" when "001100",
+                 "0000110" when "001101",
+                 "1001100" when "001110",
+                 "0100100" when "001111", -- 15
+                 "0100000" when "010000",
+                 "0001111" when "010001",
+                 "0000000" when "010010",
+                 "0000100" when "010011",
+                 "0000001" when "010100", -- 20
+                 "0010010" when "010101",
+                 "0010010" when "010110",
+                 "0000110" when "010111",
+                 "1001100" when "011000",
+                 "0100100" when "011001", -- 25
+                 "0100000" when "011010",
+                 "0001111" when "011011",
+                 "0000000" when "011100",
+                 "0000100" when "011101",
+                 "0000001" when "011110", -- 30
+                 "0100000" when "011111",
+                 "0010010" when "100000",
+                 "0000110" when "100001",
+                 "1001100" when "100010",
+                 "0100100" when "100011", -- 35
+                 "0100000" when "100100",
+                 "0001111" when "100101",
+                 "0000000" when "100110",
+                 "0000100" when "100111",
+                 "0000001" when "101000", -- 40
+                 "0010010" when "101001",
+                 "0010010" when "101010",
+                 "0000110" when "101011",
+                 "1001100" when "101100",
+                 "0100100" when "101101", -- 45
+                 "0100000" when "101110",
+                 "0001111" when "101111",
+                 "0000000" when "110000",
+                 "0000100" when "110001",
+                 "0000001" when "110010", -- 50
+                 "0010010" when "110011",
+                 "0010010" when "110100",
+                 "0000110" when "110101",
+                 "1001100" when "110110",
+                 "0100100" when "110111", -- 55
+                 "0100000" when "111000",
+                 "0001111" when "111001",
+                 "0000000" when "111010",
+					  "0000100" when "111011",
+					  "1111111" when "111111", -- para blink
+                 "1001000" when others;
+	segmentos_dez <= "0000001" when "000000",
+                 "0000001" when "000001", -- 1
+                 "0000001" when "000010",
+                 "0000001" when "000011",
+                 "0000001" when "000100",
+                 "0000001" when "000101", -- 5
+                 "0000001" when "000110",
+                 "0000001" when "000111",
+                 "0000001" when "001000",
+                 "0000001" when "001001",
+                 "0010010" when "001010", -- 10
+                 "0010010" when "001011",
+                 "0010010" when "001100",
+                 "0010010" when "001101",
+                 "0010010" when "001110",
+                 "0010010" when "001111", -- 15
+                 "0010010" when "010000",
+                 "0010010" when "010001",
+                 "0010010" when "010010",
+                 "0010010" when "010011",
+                 "0010010" when "010100", -- 20
+                 "0010010" when "010101",
+                 "0010010" when "010110",
+                 "0010010" when "010111",
+                 "0010010" when "011000",
+                 "0010010" when "011001", -- 25
+                 "0010010" when "011010",
+                 "0010010" when "011011",
+                 "0010010" when "011100",
+                 "0010010" when "011101",
+                 "0000110" when "011110", -- 30
+                 "0000110" when "011111",
+                 "0000110" when "100000",
+                 "0000110" when "100001",
+                 "0000110" when "100010",
+                 "0000110" when "100011", -- 35
+                 "0000110" when "100100",
+                 "0000110" when "100101",
+                 "0000110" when "100110",
+                 "0000110" when "100111",
+                 "1001100" when "101000", -- 40
+                 "1001100" when "101001",
+                 "1001100" when "101010",
+                 "1001100" when "101011",
+                 "1001100" when "101100",
+                 "1001100" when "101101", -- 45
+                 "1001100" when "101110",
+                 "1001100" when "101111",
+                 "1001100" when "110000",
+                 "1001100" when "110001",
+                 "0100100" when "110010", -- 50
+                 "0100100" when "110011",
+                 "0100100" when "110100",
+                 "0100100" when "110101",
+                 "0100100" when "110110",
+                 "0100100" when "110111", -- 55
+                 "0100100" when "111000",
+                 "0100100" when "111001",
+                 "0100100" when "111010",
+					  "0100100" when "111011",
+					  "1111111" when "111111", -- para blink
+                 "1001000" when others;
 end hardware;
