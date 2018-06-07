@@ -11,7 +11,9 @@ entity relogio is
 	  DisplayUnidadeMinutos	 : out std_logic_vector(6 downto 0);
 	  DisplayDezenaMinutos 	 : out std_logic_vector(6 downto 0);
 	  DisplayUnidadeHoras	 : out std_logic_vector(6 downto 0);
-	  DisplayDezenaHoras   	 : out std_logic_vector(6 downto 0)
+	  DisplayDezenaHoras   	 : out std_logic_vector(6 downto 0);
+	  DisplayHEX0   	 		 : out std_logic_vector(6 downto 0);
+	  DisplayHEX1   	 		 : out std_logic_vector(6 downto 0)
 	);
 end relogio;
  
@@ -37,7 +39,7 @@ architecture hardware of relogio is
 			begin
 				if(clockIn'event and clockIn='1') then
 					contagem := contagem + 1;
-					if(contagem = 250000) then
+					if(contagem = 25000000) then
 					  clock1Hz <= not clock1Hz;
 					  contagem := 1;
 					end if;
@@ -94,5 +96,7 @@ architecture hardware of relogio is
 		
 		C7SUH: conversor_7seg port map(unidadeHoras, DisplayUnidadeHoras);
 		C7SDH: conversor_7seg port map(dezenaHoras, DisplayDezenaHoras);
-
+		
+		DisplayHEX0 <= "1111111";
+		DisplayHEX1 <= "1111111";
  end hardware;
