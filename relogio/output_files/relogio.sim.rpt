@@ -1,0 +1,574 @@
+Simulator report for relogio
+Thu Jun 07 17:34:40 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 217 nodes    ;
+; Simulation Coverage         ;       8.76 % ;
+; Total Number of Transitions ; 505          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                       ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                    ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                          ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                           ;               ;
+; Vector input source                                                                        ; C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                            ; On            ;
+; Check outputs                                                                              ; Off                                                                           ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                            ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                            ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                            ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                           ; Off           ;
+; Detect glitches                                                                            ; Off                                                                           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                           ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                          ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       8.76 % ;
+; Total nodes checked                                 ; 217          ;
+; Total output ports checked                          ; 217          ;
+; Total output ports with complete 1/0-value coverage ; 19           ;
+; Total output ports with no 1/0-value coverage       ; 195          ;
+; Total output ports with no 1-value coverage         ; 195          ;
+; Total output ports with no 0-value coverage         ; 198          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                    ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |cronometro|count~27 ; |cronometro|count~27 ; out              ;
+; |cronometro|count~28 ; |cronometro|count~28 ; out              ;
+; |cronometro|count~29 ; |cronometro|count~29 ; out              ;
+; |cronometro|count~30 ; |cronometro|count~30 ; out              ;
+; |cronometro|count~31 ; |cronometro|count~31 ; out              ;
+; |cronometro|count[0] ; |cronometro|count[0] ; regout           ;
+; |cronometro|count[1] ; |cronometro|count[1] ; regout           ;
+; |cronometro|count[2] ; |cronometro|count[2] ; regout           ;
+; |cronometro|count[3] ; |cronometro|count[3] ; regout           ;
+; |cronometro|count[4] ; |cronometro|count[4] ; regout           ;
+; |cronometro|clk1     ; |cronometro|clk1     ; out              ;
+; |cronometro|Add0~0   ; |cronometro|Add0~0   ; out0             ;
+; |cronometro|Add0~1   ; |cronometro|Add0~1   ; out0             ;
+; |cronometro|Add0~2   ; |cronometro|Add0~2   ; out0             ;
+; |cronometro|Add0~3   ; |cronometro|Add0~3   ; out0             ;
+; |cronometro|Add0~4   ; |cronometro|Add0~4   ; out0             ;
+; |cronometro|Add0~5   ; |cronometro|Add0~5   ; out0             ;
+; |cronometro|Add0~6   ; |cronometro|Add0~6   ; out0             ;
+; |cronometro|Add0~7   ; |cronometro|Add0~7   ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |cronometro|hour[4]    ; |cronometro|hour[4]    ; regout           ;
+; |cronometro|hour[3]    ; |cronometro|hour[3]    ; regout           ;
+; |cronometro|hour[2]    ; |cronometro|hour[2]    ; regout           ;
+; |cronometro|count~0    ; |cronometro|count~0    ; out              ;
+; |cronometro|count~1    ; |cronometro|count~1    ; out              ;
+; |cronometro|count~2    ; |cronometro|count~2    ; out              ;
+; |cronometro|count~3    ; |cronometro|count~3    ; out              ;
+; |cronometro|count~4    ; |cronometro|count~4    ; out              ;
+; |cronometro|count~5    ; |cronometro|count~5    ; out              ;
+; |cronometro|count~6    ; |cronometro|count~6    ; out              ;
+; |cronometro|count~7    ; |cronometro|count~7    ; out              ;
+; |cronometro|count~8    ; |cronometro|count~8    ; out              ;
+; |cronometro|count~9    ; |cronometro|count~9    ; out              ;
+; |cronometro|count~10   ; |cronometro|count~10   ; out              ;
+; |cronometro|count~11   ; |cronometro|count~11   ; out              ;
+; |cronometro|count~12   ; |cronometro|count~12   ; out              ;
+; |cronometro|count~13   ; |cronometro|count~13   ; out              ;
+; |cronometro|count~14   ; |cronometro|count~14   ; out              ;
+; |cronometro|count~15   ; |cronometro|count~15   ; out              ;
+; |cronometro|count~16   ; |cronometro|count~16   ; out              ;
+; |cronometro|count~17   ; |cronometro|count~17   ; out              ;
+; |cronometro|count~18   ; |cronometro|count~18   ; out              ;
+; |cronometro|count~19   ; |cronometro|count~19   ; out              ;
+; |cronometro|count~20   ; |cronometro|count~20   ; out              ;
+; |cronometro|count~21   ; |cronometro|count~21   ; out              ;
+; |cronometro|count~22   ; |cronometro|count~22   ; out              ;
+; |cronometro|count~23   ; |cronometro|count~23   ; out              ;
+; |cronometro|count~24   ; |cronometro|count~24   ; out              ;
+; |cronometro|count~25   ; |cronometro|count~25   ; out              ;
+; |cronometro|hour[1]    ; |cronometro|hour[1]    ; regout           ;
+; |cronometro|hour[0]    ; |cronometro|hour[0]    ; regout           ;
+; |cronometro|hour~0     ; |cronometro|hour~0     ; out              ;
+; |cronometro|hour~1     ; |cronometro|hour~1     ; out              ;
+; |cronometro|hour~2     ; |cronometro|hour~2     ; out              ;
+; |cronometro|hour~3     ; |cronometro|hour~3     ; out              ;
+; |cronometro|hour~4     ; |cronometro|hour~4     ; out              ;
+; |cronometro|hour~5     ; |cronometro|hour~5     ; out              ;
+; |cronometro|hour~6     ; |cronometro|hour~6     ; out              ;
+; |cronometro|hour~7     ; |cronometro|hour~7     ; out              ;
+; |cronometro|hour~8     ; |cronometro|hour~8     ; out              ;
+; |cronometro|hour~9     ; |cronometro|hour~9     ; out              ;
+; |cronometro|hour~10    ; |cronometro|hour~10    ; out              ;
+; |cronometro|hour~11    ; |cronometro|hour~11    ; out              ;
+; |cronometro|min~0      ; |cronometro|min~0      ; out              ;
+; |cronometro|min~1      ; |cronometro|min~1      ; out              ;
+; |cronometro|min~2      ; |cronometro|min~2      ; out              ;
+; |cronometro|min~3      ; |cronometro|min~3      ; out              ;
+; |cronometro|min~4      ; |cronometro|min~4      ; out              ;
+; |cronometro|min~5      ; |cronometro|min~5      ; out              ;
+; |cronometro|sec~0      ; |cronometro|sec~0      ; out              ;
+; |cronometro|sec~1      ; |cronometro|sec~1      ; out              ;
+; |cronometro|sec~2      ; |cronometro|sec~2      ; out              ;
+; |cronometro|sec~3      ; |cronometro|sec~3      ; out              ;
+; |cronometro|sec~4      ; |cronometro|sec~4      ; out              ;
+; |cronometro|sec~5      ; |cronometro|sec~5      ; out              ;
+; |cronometro|clk        ; |cronometro|clk        ; regout           ;
+; |cronometro|hour[5]    ; |cronometro|hour[5]    ; regout           ;
+; |cronometro|min[0]     ; |cronometro|min[0]     ; regout           ;
+; |cronometro|min[1]     ; |cronometro|min[1]     ; regout           ;
+; |cronometro|min[2]     ; |cronometro|min[2]     ; regout           ;
+; |cronometro|min[3]     ; |cronometro|min[3]     ; regout           ;
+; |cronometro|min[4]     ; |cronometro|min[4]     ; regout           ;
+; |cronometro|min[5]     ; |cronometro|min[5]     ; regout           ;
+; |cronometro|sec[0]     ; |cronometro|sec[0]     ; regout           ;
+; |cronometro|sec[1]     ; |cronometro|sec[1]     ; regout           ;
+; |cronometro|sec[2]     ; |cronometro|sec[2]     ; regout           ;
+; |cronometro|sec[3]     ; |cronometro|sec[3]     ; regout           ;
+; |cronometro|sec[4]     ; |cronometro|sec[4]     ; regout           ;
+; |cronometro|sec[5]     ; |cronometro|sec[5]     ; regout           ;
+; |cronometro|count[6]   ; |cronometro|count[6]   ; regout           ;
+; |cronometro|count[7]   ; |cronometro|count[7]   ; regout           ;
+; |cronometro|count[8]   ; |cronometro|count[8]   ; regout           ;
+; |cronometro|count[9]   ; |cronometro|count[9]   ; regout           ;
+; |cronometro|count[10]  ; |cronometro|count[10]  ; regout           ;
+; |cronometro|count[11]  ; |cronometro|count[11]  ; regout           ;
+; |cronometro|count[12]  ; |cronometro|count[12]  ; regout           ;
+; |cronometro|count[13]  ; |cronometro|count[13]  ; regout           ;
+; |cronometro|count[14]  ; |cronometro|count[14]  ; regout           ;
+; |cronometro|count[15]  ; |cronometro|count[15]  ; regout           ;
+; |cronometro|count[16]  ; |cronometro|count[16]  ; regout           ;
+; |cronometro|count[17]  ; |cronometro|count[17]  ; regout           ;
+; |cronometro|count[18]  ; |cronometro|count[18]  ; regout           ;
+; |cronometro|count[19]  ; |cronometro|count[19]  ; regout           ;
+; |cronometro|count[20]  ; |cronometro|count[20]  ; regout           ;
+; |cronometro|count[21]  ; |cronometro|count[21]  ; regout           ;
+; |cronometro|count[22]  ; |cronometro|count[22]  ; regout           ;
+; |cronometro|count[23]  ; |cronometro|count[23]  ; regout           ;
+; |cronometro|count[24]  ; |cronometro|count[24]  ; regout           ;
+; |cronometro|count[25]  ; |cronometro|count[25]  ; regout           ;
+; |cronometro|count[26]  ; |cronometro|count[26]  ; regout           ;
+; |cronometro|count[27]  ; |cronometro|count[27]  ; regout           ;
+; |cronometro|count[28]  ; |cronometro|count[28]  ; regout           ;
+; |cronometro|count[29]  ; |cronometro|count[29]  ; regout           ;
+; |cronometro|count[30]  ; |cronometro|count[30]  ; regout           ;
+; |cronometro|count[31]  ; |cronometro|count[31]  ; regout           ;
+; |cronometro|seconds[0] ; |cronometro|seconds[0] ; pin_out          ;
+; |cronometro|seconds[1] ; |cronometro|seconds[1] ; pin_out          ;
+; |cronometro|seconds[2] ; |cronometro|seconds[2] ; pin_out          ;
+; |cronometro|seconds[3] ; |cronometro|seconds[3] ; pin_out          ;
+; |cronometro|seconds[4] ; |cronometro|seconds[4] ; pin_out          ;
+; |cronometro|seconds[5] ; |cronometro|seconds[5] ; pin_out          ;
+; |cronometro|minutes[0] ; |cronometro|minutes[0] ; pin_out          ;
+; |cronometro|minutes[1] ; |cronometro|minutes[1] ; pin_out          ;
+; |cronometro|minutes[2] ; |cronometro|minutes[2] ; pin_out          ;
+; |cronometro|minutes[3] ; |cronometro|minutes[3] ; pin_out          ;
+; |cronometro|minutes[4] ; |cronometro|minutes[4] ; pin_out          ;
+; |cronometro|minutes[5] ; |cronometro|minutes[5] ; pin_out          ;
+; |cronometro|hours[0]   ; |cronometro|hours[0]   ; pin_out          ;
+; |cronometro|hours[1]   ; |cronometro|hours[1]   ; pin_out          ;
+; |cronometro|hours[2]   ; |cronometro|hours[2]   ; pin_out          ;
+; |cronometro|hours[3]   ; |cronometro|hours[3]   ; pin_out          ;
+; |cronometro|hours[4]   ; |cronometro|hours[4]   ; pin_out          ;
+; |cronometro|Add0~9     ; |cronometro|Add0~9     ; out0             ;
+; |cronometro|Add0~10    ; |cronometro|Add0~10    ; out0             ;
+; |cronometro|Add0~11    ; |cronometro|Add0~11    ; out0             ;
+; |cronometro|Add0~12    ; |cronometro|Add0~12    ; out0             ;
+; |cronometro|Add0~13    ; |cronometro|Add0~13    ; out0             ;
+; |cronometro|Add0~14    ; |cronometro|Add0~14    ; out0             ;
+; |cronometro|Add0~15    ; |cronometro|Add0~15    ; out0             ;
+; |cronometro|Add0~16    ; |cronometro|Add0~16    ; out0             ;
+; |cronometro|Add0~17    ; |cronometro|Add0~17    ; out0             ;
+; |cronometro|Add0~18    ; |cronometro|Add0~18    ; out0             ;
+; |cronometro|Add0~19    ; |cronometro|Add0~19    ; out0             ;
+; |cronometro|Add0~20    ; |cronometro|Add0~20    ; out0             ;
+; |cronometro|Add0~21    ; |cronometro|Add0~21    ; out0             ;
+; |cronometro|Add0~22    ; |cronometro|Add0~22    ; out0             ;
+; |cronometro|Add0~23    ; |cronometro|Add0~23    ; out0             ;
+; |cronometro|Add0~24    ; |cronometro|Add0~24    ; out0             ;
+; |cronometro|Add0~25    ; |cronometro|Add0~25    ; out0             ;
+; |cronometro|Add0~26    ; |cronometro|Add0~26    ; out0             ;
+; |cronometro|Add0~27    ; |cronometro|Add0~27    ; out0             ;
+; |cronometro|Add0~28    ; |cronometro|Add0~28    ; out0             ;
+; |cronometro|Add0~29    ; |cronometro|Add0~29    ; out0             ;
+; |cronometro|Add0~30    ; |cronometro|Add0~30    ; out0             ;
+; |cronometro|Add0~31    ; |cronometro|Add0~31    ; out0             ;
+; |cronometro|Add0~32    ; |cronometro|Add0~32    ; out0             ;
+; |cronometro|Add0~33    ; |cronometro|Add0~33    ; out0             ;
+; |cronometro|Add0~34    ; |cronometro|Add0~34    ; out0             ;
+; |cronometro|Add0~35    ; |cronometro|Add0~35    ; out0             ;
+; |cronometro|Add0~36    ; |cronometro|Add0~36    ; out0             ;
+; |cronometro|Add0~37    ; |cronometro|Add0~37    ; out0             ;
+; |cronometro|Add0~38    ; |cronometro|Add0~38    ; out0             ;
+; |cronometro|Add0~39    ; |cronometro|Add0~39    ; out0             ;
+; |cronometro|Add0~40    ; |cronometro|Add0~40    ; out0             ;
+; |cronometro|Add0~41    ; |cronometro|Add0~41    ; out0             ;
+; |cronometro|Add0~42    ; |cronometro|Add0~42    ; out0             ;
+; |cronometro|Add0~43    ; |cronometro|Add0~43    ; out0             ;
+; |cronometro|Add0~44    ; |cronometro|Add0~44    ; out0             ;
+; |cronometro|Add0~45    ; |cronometro|Add0~45    ; out0             ;
+; |cronometro|Add0~46    ; |cronometro|Add0~46    ; out0             ;
+; |cronometro|Add0~47    ; |cronometro|Add0~47    ; out0             ;
+; |cronometro|Add0~48    ; |cronometro|Add0~48    ; out0             ;
+; |cronometro|Add0~49    ; |cronometro|Add0~49    ; out0             ;
+; |cronometro|Add0~50    ; |cronometro|Add0~50    ; out0             ;
+; |cronometro|Add0~51    ; |cronometro|Add0~51    ; out0             ;
+; |cronometro|Add0~52    ; |cronometro|Add0~52    ; out0             ;
+; |cronometro|Add0~53    ; |cronometro|Add0~53    ; out0             ;
+; |cronometro|Add0~54    ; |cronometro|Add0~54    ; out0             ;
+; |cronometro|Add0~55    ; |cronometro|Add0~55    ; out0             ;
+; |cronometro|Add0~56    ; |cronometro|Add0~56    ; out0             ;
+; |cronometro|Add0~57    ; |cronometro|Add0~57    ; out0             ;
+; |cronometro|Add0~58    ; |cronometro|Add0~58    ; out0             ;
+; |cronometro|Add0~59    ; |cronometro|Add0~59    ; out0             ;
+; |cronometro|Add0~60    ; |cronometro|Add0~60    ; out0             ;
+; |cronometro|Add1~0     ; |cronometro|Add1~0     ; out0             ;
+; |cronometro|Add1~1     ; |cronometro|Add1~1     ; out0             ;
+; |cronometro|Add1~2     ; |cronometro|Add1~2     ; out0             ;
+; |cronometro|Add1~3     ; |cronometro|Add1~3     ; out0             ;
+; |cronometro|Add1~4     ; |cronometro|Add1~4     ; out0             ;
+; |cronometro|Add1~5     ; |cronometro|Add1~5     ; out0             ;
+; |cronometro|Add1~6     ; |cronometro|Add1~6     ; out0             ;
+; |cronometro|Add1~7     ; |cronometro|Add1~7     ; out0             ;
+; |cronometro|Add1~8     ; |cronometro|Add1~8     ; out0             ;
+; |cronometro|Add2~0     ; |cronometro|Add2~0     ; out0             ;
+; |cronometro|Add2~1     ; |cronometro|Add2~1     ; out0             ;
+; |cronometro|Add2~2     ; |cronometro|Add2~2     ; out0             ;
+; |cronometro|Add2~3     ; |cronometro|Add2~3     ; out0             ;
+; |cronometro|Add2~4     ; |cronometro|Add2~4     ; out0             ;
+; |cronometro|Add2~5     ; |cronometro|Add2~5     ; out0             ;
+; |cronometro|Add2~6     ; |cronometro|Add2~6     ; out0             ;
+; |cronometro|Add2~7     ; |cronometro|Add2~7     ; out0             ;
+; |cronometro|Add2~8     ; |cronometro|Add2~8     ; out0             ;
+; |cronometro|Add3~0     ; |cronometro|Add3~0     ; out0             ;
+; |cronometro|Add3~1     ; |cronometro|Add3~1     ; out0             ;
+; |cronometro|Add3~2     ; |cronometro|Add3~2     ; out0             ;
+; |cronometro|Add3~3     ; |cronometro|Add3~3     ; out0             ;
+; |cronometro|Add3~4     ; |cronometro|Add3~4     ; out0             ;
+; |cronometro|Add3~5     ; |cronometro|Add3~5     ; out0             ;
+; |cronometro|Add3~6     ; |cronometro|Add3~6     ; out0             ;
+; |cronometro|Add3~7     ; |cronometro|Add3~7     ; out0             ;
+; |cronometro|Add3~8     ; |cronometro|Add3~8     ; out0             ;
+; |cronometro|Equal0~0   ; |cronometro|Equal0~0   ; out0             ;
+; |cronometro|Equal1~0   ; |cronometro|Equal1~0   ; out0             ;
+; |cronometro|Equal2~0   ; |cronometro|Equal2~0   ; out0             ;
+; |cronometro|Equal3~0   ; |cronometro|Equal3~0   ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |cronometro|hour[4]    ; |cronometro|hour[4]    ; regout           ;
+; |cronometro|hour[3]    ; |cronometro|hour[3]    ; regout           ;
+; |cronometro|hour[2]    ; |cronometro|hour[2]    ; regout           ;
+; |cronometro|count~0    ; |cronometro|count~0    ; out              ;
+; |cronometro|count~1    ; |cronometro|count~1    ; out              ;
+; |cronometro|count~2    ; |cronometro|count~2    ; out              ;
+; |cronometro|count~3    ; |cronometro|count~3    ; out              ;
+; |cronometro|count~4    ; |cronometro|count~4    ; out              ;
+; |cronometro|count~5    ; |cronometro|count~5    ; out              ;
+; |cronometro|count~6    ; |cronometro|count~6    ; out              ;
+; |cronometro|count~7    ; |cronometro|count~7    ; out              ;
+; |cronometro|count~8    ; |cronometro|count~8    ; out              ;
+; |cronometro|count~9    ; |cronometro|count~9    ; out              ;
+; |cronometro|count~10   ; |cronometro|count~10   ; out              ;
+; |cronometro|count~11   ; |cronometro|count~11   ; out              ;
+; |cronometro|count~12   ; |cronometro|count~12   ; out              ;
+; |cronometro|count~13   ; |cronometro|count~13   ; out              ;
+; |cronometro|count~14   ; |cronometro|count~14   ; out              ;
+; |cronometro|count~15   ; |cronometro|count~15   ; out              ;
+; |cronometro|count~16   ; |cronometro|count~16   ; out              ;
+; |cronometro|count~17   ; |cronometro|count~17   ; out              ;
+; |cronometro|count~18   ; |cronometro|count~18   ; out              ;
+; |cronometro|count~19   ; |cronometro|count~19   ; out              ;
+; |cronometro|count~20   ; |cronometro|count~20   ; out              ;
+; |cronometro|count~21   ; |cronometro|count~21   ; out              ;
+; |cronometro|count~22   ; |cronometro|count~22   ; out              ;
+; |cronometro|count~23   ; |cronometro|count~23   ; out              ;
+; |cronometro|count~24   ; |cronometro|count~24   ; out              ;
+; |cronometro|count~25   ; |cronometro|count~25   ; out              ;
+; |cronometro|count~26   ; |cronometro|count~26   ; out              ;
+; |cronometro|hour[1]    ; |cronometro|hour[1]    ; regout           ;
+; |cronometro|hour[0]    ; |cronometro|hour[0]    ; regout           ;
+; |cronometro|hour~0     ; |cronometro|hour~0     ; out              ;
+; |cronometro|hour~1     ; |cronometro|hour~1     ; out              ;
+; |cronometro|hour~2     ; |cronometro|hour~2     ; out              ;
+; |cronometro|hour~3     ; |cronometro|hour~3     ; out              ;
+; |cronometro|hour~4     ; |cronometro|hour~4     ; out              ;
+; |cronometro|hour~5     ; |cronometro|hour~5     ; out              ;
+; |cronometro|hour~6     ; |cronometro|hour~6     ; out              ;
+; |cronometro|hour~7     ; |cronometro|hour~7     ; out              ;
+; |cronometro|hour~8     ; |cronometro|hour~8     ; out              ;
+; |cronometro|hour~9     ; |cronometro|hour~9     ; out              ;
+; |cronometro|hour~10    ; |cronometro|hour~10    ; out              ;
+; |cronometro|hour~11    ; |cronometro|hour~11    ; out              ;
+; |cronometro|min~0      ; |cronometro|min~0      ; out              ;
+; |cronometro|min~1      ; |cronometro|min~1      ; out              ;
+; |cronometro|min~2      ; |cronometro|min~2      ; out              ;
+; |cronometro|min~3      ; |cronometro|min~3      ; out              ;
+; |cronometro|min~4      ; |cronometro|min~4      ; out              ;
+; |cronometro|min~5      ; |cronometro|min~5      ; out              ;
+; |cronometro|sec~0      ; |cronometro|sec~0      ; out              ;
+; |cronometro|sec~1      ; |cronometro|sec~1      ; out              ;
+; |cronometro|sec~2      ; |cronometro|sec~2      ; out              ;
+; |cronometro|sec~3      ; |cronometro|sec~3      ; out              ;
+; |cronometro|sec~4      ; |cronometro|sec~4      ; out              ;
+; |cronometro|sec~5      ; |cronometro|sec~5      ; out              ;
+; |cronometro|clk        ; |cronometro|clk        ; regout           ;
+; |cronometro|hour[5]    ; |cronometro|hour[5]    ; regout           ;
+; |cronometro|min[0]     ; |cronometro|min[0]     ; regout           ;
+; |cronometro|min[1]     ; |cronometro|min[1]     ; regout           ;
+; |cronometro|min[2]     ; |cronometro|min[2]     ; regout           ;
+; |cronometro|min[3]     ; |cronometro|min[3]     ; regout           ;
+; |cronometro|min[4]     ; |cronometro|min[4]     ; regout           ;
+; |cronometro|min[5]     ; |cronometro|min[5]     ; regout           ;
+; |cronometro|sec[0]     ; |cronometro|sec[0]     ; regout           ;
+; |cronometro|sec[1]     ; |cronometro|sec[1]     ; regout           ;
+; |cronometro|sec[2]     ; |cronometro|sec[2]     ; regout           ;
+; |cronometro|sec[3]     ; |cronometro|sec[3]     ; regout           ;
+; |cronometro|sec[4]     ; |cronometro|sec[4]     ; regout           ;
+; |cronometro|sec[5]     ; |cronometro|sec[5]     ; regout           ;
+; |cronometro|count[5]   ; |cronometro|count[5]   ; regout           ;
+; |cronometro|count[6]   ; |cronometro|count[6]   ; regout           ;
+; |cronometro|count[7]   ; |cronometro|count[7]   ; regout           ;
+; |cronometro|count[8]   ; |cronometro|count[8]   ; regout           ;
+; |cronometro|count[9]   ; |cronometro|count[9]   ; regout           ;
+; |cronometro|count[10]  ; |cronometro|count[10]  ; regout           ;
+; |cronometro|count[11]  ; |cronometro|count[11]  ; regout           ;
+; |cronometro|count[12]  ; |cronometro|count[12]  ; regout           ;
+; |cronometro|count[13]  ; |cronometro|count[13]  ; regout           ;
+; |cronometro|count[14]  ; |cronometro|count[14]  ; regout           ;
+; |cronometro|count[15]  ; |cronometro|count[15]  ; regout           ;
+; |cronometro|count[16]  ; |cronometro|count[16]  ; regout           ;
+; |cronometro|count[17]  ; |cronometro|count[17]  ; regout           ;
+; |cronometro|count[18]  ; |cronometro|count[18]  ; regout           ;
+; |cronometro|count[19]  ; |cronometro|count[19]  ; regout           ;
+; |cronometro|count[20]  ; |cronometro|count[20]  ; regout           ;
+; |cronometro|count[21]  ; |cronometro|count[21]  ; regout           ;
+; |cronometro|count[22]  ; |cronometro|count[22]  ; regout           ;
+; |cronometro|count[23]  ; |cronometro|count[23]  ; regout           ;
+; |cronometro|count[24]  ; |cronometro|count[24]  ; regout           ;
+; |cronometro|count[25]  ; |cronometro|count[25]  ; regout           ;
+; |cronometro|count[26]  ; |cronometro|count[26]  ; regout           ;
+; |cronometro|count[27]  ; |cronometro|count[27]  ; regout           ;
+; |cronometro|count[28]  ; |cronometro|count[28]  ; regout           ;
+; |cronometro|count[29]  ; |cronometro|count[29]  ; regout           ;
+; |cronometro|count[30]  ; |cronometro|count[30]  ; regout           ;
+; |cronometro|count[31]  ; |cronometro|count[31]  ; regout           ;
+; |cronometro|seconds[0] ; |cronometro|seconds[0] ; pin_out          ;
+; |cronometro|seconds[1] ; |cronometro|seconds[1] ; pin_out          ;
+; |cronometro|seconds[2] ; |cronometro|seconds[2] ; pin_out          ;
+; |cronometro|seconds[3] ; |cronometro|seconds[3] ; pin_out          ;
+; |cronometro|seconds[4] ; |cronometro|seconds[4] ; pin_out          ;
+; |cronometro|seconds[5] ; |cronometro|seconds[5] ; pin_out          ;
+; |cronometro|minutes[0] ; |cronometro|minutes[0] ; pin_out          ;
+; |cronometro|minutes[1] ; |cronometro|minutes[1] ; pin_out          ;
+; |cronometro|minutes[2] ; |cronometro|minutes[2] ; pin_out          ;
+; |cronometro|minutes[3] ; |cronometro|minutes[3] ; pin_out          ;
+; |cronometro|minutes[4] ; |cronometro|minutes[4] ; pin_out          ;
+; |cronometro|minutes[5] ; |cronometro|minutes[5] ; pin_out          ;
+; |cronometro|hours[0]   ; |cronometro|hours[0]   ; pin_out          ;
+; |cronometro|hours[1]   ; |cronometro|hours[1]   ; pin_out          ;
+; |cronometro|hours[2]   ; |cronometro|hours[2]   ; pin_out          ;
+; |cronometro|hours[3]   ; |cronometro|hours[3]   ; pin_out          ;
+; |cronometro|hours[4]   ; |cronometro|hours[4]   ; pin_out          ;
+; |cronometro|Add0~8     ; |cronometro|Add0~8     ; out0             ;
+; |cronometro|Add0~9     ; |cronometro|Add0~9     ; out0             ;
+; |cronometro|Add0~10    ; |cronometro|Add0~10    ; out0             ;
+; |cronometro|Add0~11    ; |cronometro|Add0~11    ; out0             ;
+; |cronometro|Add0~12    ; |cronometro|Add0~12    ; out0             ;
+; |cronometro|Add0~13    ; |cronometro|Add0~13    ; out0             ;
+; |cronometro|Add0~14    ; |cronometro|Add0~14    ; out0             ;
+; |cronometro|Add0~15    ; |cronometro|Add0~15    ; out0             ;
+; |cronometro|Add0~16    ; |cronometro|Add0~16    ; out0             ;
+; |cronometro|Add0~17    ; |cronometro|Add0~17    ; out0             ;
+; |cronometro|Add0~18    ; |cronometro|Add0~18    ; out0             ;
+; |cronometro|Add0~19    ; |cronometro|Add0~19    ; out0             ;
+; |cronometro|Add0~20    ; |cronometro|Add0~20    ; out0             ;
+; |cronometro|Add0~21    ; |cronometro|Add0~21    ; out0             ;
+; |cronometro|Add0~22    ; |cronometro|Add0~22    ; out0             ;
+; |cronometro|Add0~23    ; |cronometro|Add0~23    ; out0             ;
+; |cronometro|Add0~24    ; |cronometro|Add0~24    ; out0             ;
+; |cronometro|Add0~25    ; |cronometro|Add0~25    ; out0             ;
+; |cronometro|Add0~26    ; |cronometro|Add0~26    ; out0             ;
+; |cronometro|Add0~27    ; |cronometro|Add0~27    ; out0             ;
+; |cronometro|Add0~28    ; |cronometro|Add0~28    ; out0             ;
+; |cronometro|Add0~29    ; |cronometro|Add0~29    ; out0             ;
+; |cronometro|Add0~30    ; |cronometro|Add0~30    ; out0             ;
+; |cronometro|Add0~31    ; |cronometro|Add0~31    ; out0             ;
+; |cronometro|Add0~32    ; |cronometro|Add0~32    ; out0             ;
+; |cronometro|Add0~33    ; |cronometro|Add0~33    ; out0             ;
+; |cronometro|Add0~34    ; |cronometro|Add0~34    ; out0             ;
+; |cronometro|Add0~35    ; |cronometro|Add0~35    ; out0             ;
+; |cronometro|Add0~36    ; |cronometro|Add0~36    ; out0             ;
+; |cronometro|Add0~37    ; |cronometro|Add0~37    ; out0             ;
+; |cronometro|Add0~38    ; |cronometro|Add0~38    ; out0             ;
+; |cronometro|Add0~39    ; |cronometro|Add0~39    ; out0             ;
+; |cronometro|Add0~40    ; |cronometro|Add0~40    ; out0             ;
+; |cronometro|Add0~41    ; |cronometro|Add0~41    ; out0             ;
+; |cronometro|Add0~42    ; |cronometro|Add0~42    ; out0             ;
+; |cronometro|Add0~43    ; |cronometro|Add0~43    ; out0             ;
+; |cronometro|Add0~44    ; |cronometro|Add0~44    ; out0             ;
+; |cronometro|Add0~45    ; |cronometro|Add0~45    ; out0             ;
+; |cronometro|Add0~46    ; |cronometro|Add0~46    ; out0             ;
+; |cronometro|Add0~47    ; |cronometro|Add0~47    ; out0             ;
+; |cronometro|Add0~48    ; |cronometro|Add0~48    ; out0             ;
+; |cronometro|Add0~49    ; |cronometro|Add0~49    ; out0             ;
+; |cronometro|Add0~50    ; |cronometro|Add0~50    ; out0             ;
+; |cronometro|Add0~51    ; |cronometro|Add0~51    ; out0             ;
+; |cronometro|Add0~52    ; |cronometro|Add0~52    ; out0             ;
+; |cronometro|Add0~53    ; |cronometro|Add0~53    ; out0             ;
+; |cronometro|Add0~54    ; |cronometro|Add0~54    ; out0             ;
+; |cronometro|Add0~55    ; |cronometro|Add0~55    ; out0             ;
+; |cronometro|Add0~56    ; |cronometro|Add0~56    ; out0             ;
+; |cronometro|Add0~57    ; |cronometro|Add0~57    ; out0             ;
+; |cronometro|Add0~58    ; |cronometro|Add0~58    ; out0             ;
+; |cronometro|Add0~59    ; |cronometro|Add0~59    ; out0             ;
+; |cronometro|Add0~60    ; |cronometro|Add0~60    ; out0             ;
+; |cronometro|Add1~0     ; |cronometro|Add1~0     ; out0             ;
+; |cronometro|Add1~1     ; |cronometro|Add1~1     ; out0             ;
+; |cronometro|Add1~2     ; |cronometro|Add1~2     ; out0             ;
+; |cronometro|Add1~3     ; |cronometro|Add1~3     ; out0             ;
+; |cronometro|Add1~4     ; |cronometro|Add1~4     ; out0             ;
+; |cronometro|Add1~5     ; |cronometro|Add1~5     ; out0             ;
+; |cronometro|Add1~6     ; |cronometro|Add1~6     ; out0             ;
+; |cronometro|Add1~7     ; |cronometro|Add1~7     ; out0             ;
+; |cronometro|Add1~8     ; |cronometro|Add1~8     ; out0             ;
+; |cronometro|Add2~0     ; |cronometro|Add2~0     ; out0             ;
+; |cronometro|Add2~1     ; |cronometro|Add2~1     ; out0             ;
+; |cronometro|Add2~2     ; |cronometro|Add2~2     ; out0             ;
+; |cronometro|Add2~3     ; |cronometro|Add2~3     ; out0             ;
+; |cronometro|Add2~4     ; |cronometro|Add2~4     ; out0             ;
+; |cronometro|Add2~5     ; |cronometro|Add2~5     ; out0             ;
+; |cronometro|Add2~6     ; |cronometro|Add2~6     ; out0             ;
+; |cronometro|Add2~7     ; |cronometro|Add2~7     ; out0             ;
+; |cronometro|Add2~8     ; |cronometro|Add2~8     ; out0             ;
+; |cronometro|Add3~0     ; |cronometro|Add3~0     ; out0             ;
+; |cronometro|Add3~1     ; |cronometro|Add3~1     ; out0             ;
+; |cronometro|Add3~2     ; |cronometro|Add3~2     ; out0             ;
+; |cronometro|Add3~3     ; |cronometro|Add3~3     ; out0             ;
+; |cronometro|Add3~4     ; |cronometro|Add3~4     ; out0             ;
+; |cronometro|Add3~5     ; |cronometro|Add3~5     ; out0             ;
+; |cronometro|Add3~6     ; |cronometro|Add3~6     ; out0             ;
+; |cronometro|Add3~7     ; |cronometro|Add3~7     ; out0             ;
+; |cronometro|Add3~8     ; |cronometro|Add3~8     ; out0             ;
+; |cronometro|Equal0~0   ; |cronometro|Equal0~0   ; out0             ;
+; |cronometro|Equal1~0   ; |cronometro|Equal1~0   ; out0             ;
+; |cronometro|Equal2~0   ; |cronometro|Equal2~0   ; out0             ;
+; |cronometro|Equal3~0   ; |cronometro|Equal3~0   ; out0             ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Jun 07 17:34:39 2018
+Info: Command: quartus_sim --simulation_results_format=VWF relogio -c relogio
+Info (324025): Using vector source file "C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogio/relogio/Waveform1.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       8.76 %
+Info (328052): Number of transitions in simulation is 505
+Info (324045): Vector file relogio.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4460 megabytes
+    Info: Processing ended: Thu Jun 07 17:34:40 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

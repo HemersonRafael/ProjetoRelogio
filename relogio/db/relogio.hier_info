@@ -1,4 +1,38 @@
-|relogio
+|cronometro
+play => ~NO_FANOUT~
+pause => ~NO_FANOUT~
+rst => dezenaHoras[0].ACLR
+rst => dezenaHoras[1].ACLR
+rst => dezenaHoras[2].ACLR
+rst => dezenaHoras[3].ACLR
+rst => unidadeHoras[0].ACLR
+rst => unidadeHoras[1].ACLR
+rst => unidadeHoras[2].ACLR
+rst => unidadeHoras[3].ACLR
+rst => dezenaMinutos[0].ACLR
+rst => dezenaMinutos[1].ACLR
+rst => dezenaMinutos[2].ACLR
+rst => dezenaMinutos[3].ACLR
+rst => unidadeMinutos[0].ACLR
+rst => unidadeMinutos[1].ACLR
+rst => unidadeMinutos[2].ACLR
+rst => unidadeMinutos[3].ACLR
+rst => dezenaSegundos[0].ACLR
+rst => dezenaSegundos[1].ACLR
+rst => dezenaSegundos[2].ACLR
+rst => dezenaSegundos[3].ACLR
+rst => unidadeSegundos[0].ACLR
+rst => unidadeSegundos[1].ACLR
+rst => unidadeSegundos[2].ACLR
+rst => unidadeSegundos[3].ACLR
+rst => dezenaDecSeg[0].ACLR
+rst => dezenaDecSeg[1].ACLR
+rst => dezenaDecSeg[2].ACLR
+rst => dezenaDecSeg[3].ACLR
+rst => unidadeDecSeg[0].ACLR
+rst => unidadeDecSeg[1].ACLR
+rst => unidadeDecSeg[2].ACLR
+rst => unidadeDecSeg[3].ACLR
 clockIn => clock1Hz.CLK
 clockIn => \DF:contagem[0].CLK
 clockIn => \DF:contagem[1].CLK
@@ -32,6 +66,20 @@ clockIn => \DF:contagem[28].CLK
 clockIn => \DF:contagem[29].CLK
 clockIn => \DF:contagem[30].CLK
 clockIn => \DF:contagem[31].CLK
+DisplayUnidadeDecSeg[0] <= conversor_7seg:C7SUDS.segmentos[0]
+DisplayUnidadeDecSeg[1] <= conversor_7seg:C7SUDS.segmentos[1]
+DisplayUnidadeDecSeg[2] <= conversor_7seg:C7SUDS.segmentos[2]
+DisplayUnidadeDecSeg[3] <= conversor_7seg:C7SUDS.segmentos[3]
+DisplayUnidadeDecSeg[4] <= conversor_7seg:C7SUDS.segmentos[4]
+DisplayUnidadeDecSeg[5] <= conversor_7seg:C7SUDS.segmentos[5]
+DisplayUnidadeDecSeg[6] <= conversor_7seg:C7SUDS.segmentos[6]
+DisplayDezenaDecSeg[0] <= conversor_7seg:C7SDDS.segmentos[0]
+DisplayDezenaDecSeg[1] <= conversor_7seg:C7SDDS.segmentos[1]
+DisplayDezenaDecSeg[2] <= conversor_7seg:C7SDDS.segmentos[2]
+DisplayDezenaDecSeg[3] <= conversor_7seg:C7SDDS.segmentos[3]
+DisplayDezenaDecSeg[4] <= conversor_7seg:C7SDDS.segmentos[4]
+DisplayDezenaDecSeg[5] <= conversor_7seg:C7SDDS.segmentos[5]
+DisplayDezenaDecSeg[6] <= conversor_7seg:C7SDDS.segmentos[6]
 DisplayUnidadeSegundos[0] <= conversor_7seg:C7SUS.segmentos[0]
 DisplayUnidadeSegundos[1] <= conversor_7seg:C7SUS.segmentos[1]
 DisplayUnidadeSegundos[2] <= conversor_7seg:C7SUS.segmentos[2]
@@ -76,7 +124,7 @@ DisplayDezenaHoras[5] <= conversor_7seg:C7SDH.segmentos[5]
 DisplayDezenaHoras[6] <= conversor_7seg:C7SDH.segmentos[6]
 
 
-|relogio|conversor_7seg:C7SUS
+|cronometro|conversor_7seg:C7SUDS
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
@@ -114,7 +162,7 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio|conversor_7seg:C7SDS
+|cronometro|conversor_7seg:C7SDDS
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
@@ -152,7 +200,7 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio|conversor_7seg:C7SUM
+|cronometro|conversor_7seg:C7SUS
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
@@ -190,7 +238,7 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio|conversor_7seg:C7SDM
+|cronometro|conversor_7seg:C7SDS
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
@@ -228,7 +276,7 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio|conversor_7seg:C7SUH
+|cronometro|conversor_7seg:C7SUM
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
@@ -266,7 +314,83 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio|conversor_7seg:C7SDH
+|cronometro|conversor_7seg:C7SDM
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|conversor_7seg:C7SUH
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cronometro|conversor_7seg:C7SDH
 entrada[0] => Mux0.IN19
 entrada[0] => Mux1.IN19
 entrada[0] => Mux2.IN19
