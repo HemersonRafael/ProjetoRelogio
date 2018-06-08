@@ -26,7 +26,7 @@ architecture hardware of relogio is
 		);
 	end component;
 	
-	signal clock1Hz 								: std_logic 						 :='0';
+	signal clock1Hz 								: std_logic 						 := '0';
 	signal unidadeSegundos, dezenaSegundos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeHoras, dezenaHoras			: std_logic_vector(3 downto 0) := "0000";

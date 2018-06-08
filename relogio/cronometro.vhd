@@ -8,13 +8,13 @@ use ieee.std_logic_unsigned.all;
 entity cronometro is
 	port(
 	  play                   : in std_logic; -- Inicia/Pausa a contagem
-	  pause                   : in std_logic; -- Só para testar o pause
+	  pause                  : in std_logic; -- Só para testar o pause
 	  rst    				    : in std_logic; -- Zera o cronômetro
 	  
 	  clockIn    				 : in std_logic; -- Clock de entrada 50MHz
 	  
-	  DisplayUnidadeDecSeg  : out std_logic_vector(6 downto 0);
-	  DisplayDezenaDecSeg   : out std_logic_vector(6 downto 0);
+	  DisplayUnidadeDecSeg   : out std_logic_vector(6 downto 0);
+	  DisplayDezenaDecSeg    : out std_logic_vector(6 downto 0);
 	  DisplayUnidadeSegundos : out std_logic_vector(6 downto 0);
 	  DisplayDezenaSegundos  : out std_logic_vector(6 downto 0);
 	  DisplayUnidadeMinutos	 : out std_logic_vector(6 downto 0);
@@ -35,13 +35,13 @@ architecture hardware of cronometro is
 	
 	component registrador is
 	port(
-			clk_reg, rst_reg	:	in std_logic;
-			entrada_reg			:	in std_logic_vector(6 downto 0);
+			clk_reg, rst_reg	:	in  std_logic;
+			entrada_reg			:	in  std_logic_vector(6 downto 0);
 			saida_reg			:	out std_logic_vector(6 downto 0)
 	);
 	end component;
 	
-	signal clock1Hz 								: std_logic 						 :='0';
+	signal clockOutDF 							: std_logic 						 := '0';
 	signal unidadeDecSeg, dezenaDecSeg	   : std_logic_vector(3 downto 0) := "0000";
 	signal unidadeSegundos, dezenaSegundos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
@@ -50,24 +50,24 @@ architecture hardware of cronometro is
 	begin
 	  
 	--Divisor de frequencia de 50 MHz para 1 Hz.
-	  DF : process(clockIn)
+	   DF : process(clockIn)
 			variable contagem : integer := 1;
 			begin
 				if(clockIn'event and clockIn='1') then
 					contagem := contagem + 1;
-					if(contagem = 2500000) then -- ver se esse é o valor de clock para decimos de segundo
-					  clock1Hz <= not clock1Hz;
+					if(contagem = 25000000) then -- ver se esse é o valor de clock para decimos de segundo
+					  clockOutDF <= not clockOutDF;
 					  contagem := 1;
 					end if;
 				end if;
-	  end process DF;
+	   end process DF;
 	  
 	-- Contador de horas, minutos e segundos
-		CONTADOR_HMSDS : process(clock1Hz)   -- Periodo de 1 segundo.
+		CONTADOR_HMSDS : process(clockOutDF)   -- Periodo de 1 segundo.
 			variable contDecSeg, contSegundos, contMinutos, contHoras : integer range 0 to 60 :=0;
 			variable quocienteDecSeg, restoDecSeg, quocienteSegundos, restoSegundo, quocienteMinutos, restoMinutos, quocienteHoras, restoHoras : integer range 0 to 9 :=0;
 			begin
-				if(clock1Hz'event and clock1Hz='1') then
+				if(clockOutDF'event and clockOutDF='1') then
 					contDecSeg := contDecSeg + 1;
 					if(contDecSeg = 59) then
 						contDecSeg :=0;
