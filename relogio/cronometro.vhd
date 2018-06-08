@@ -8,13 +8,15 @@ use ieee.std_logic_unsigned.all;
 entity cronometro is
 	port(
 	  play                   : in std_logic; -- Inicia/Pausa a contagem
-	  pause                   : in std_logic; -- Só para testar o pause
+	  pause                  : in std_logic; -- Só para testar o pause
 	  rst    				    : in std_logic; -- Zera o cronômetro
+	  
+	  cronometro_ON_OFF		 :	in std_logic; -- 1 = on, 2 = off
 	  
 	  clockIn    				 : in std_logic; -- Clock de entrada 50MHz
 	  
-	  DisplayUnidadeDecSeg  : out std_logic_vector(6 downto 0);
-	  DisplayDezenaDecSeg   : out std_logic_vector(6 downto 0);
+	  DisplayUnidadeDecSeg   : out std_logic_vector(6 downto 0);
+	  DisplayDezenaDecSeg    : out std_logic_vector(6 downto 0);
 	  DisplayUnidadeSegundos : out std_logic_vector(6 downto 0);
 	  DisplayDezenaSegundos  : out std_logic_vector(6 downto 0);
 	  DisplayUnidadeMinutos	 : out std_logic_vector(6 downto 0);
@@ -46,7 +48,7 @@ architecture hardware of cronometro is
 	signal unidadeSegundos, dezenaSegundos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeHoras, dezenaHoras			: std_logic_vector(3 downto 0) := "0000";
-	
+	signal contPlay : std_logic;
 	begin
 	  
 	--Divisor de frequencia de 50 MHz para 1 Hz.
@@ -55,7 +57,7 @@ architecture hardware of cronometro is
 			begin
 				if(clockIn'event and clockIn='1') then
 					contagem := contagem + 1;
-					if(contagem = 2500000) then -- ver se esse é o valor de clock para decimos de segundo
+					if(contagem = 250000) then -- ver se esse é o valor de clock para decimos de segundo
 					  clock1Hz <= not clock1Hz;
 					  contagem := 1;
 					end if;
@@ -64,12 +66,25 @@ architecture hardware of cronometro is
 	  
 	-- Contador de horas, minutos e segundos
 		CONTADOR_HMSDS : process(clock1Hz)   -- Periodo de 1 segundo.
-			variable contDecSeg, contSegundos, contMinutos, contHoras : integer range 0 to 60 :=0;
+			variable contDecSeg, contSegundos, contMinutos, contHoras : integer range 0 to 99 :=0;
+			
 			variable quocienteDecSeg, restoDecSeg, quocienteSegundos, restoSegundo, quocienteMinutos, restoMinutos, quocienteHoras, restoHoras : integer range 0 to 9 :=0;
 			begin
+			
+			-- saber quantas vezes o botão play foi apertado
+		   if(play'EVENT and play='0') then
+--				contPlay := contPlay +1;
+--				if(contPlay = 2) then
+--					contPlay:=0;
+--				end if;
+				contPlay <= NOT(contPlay);
+			end if;
+			
+			if(contPlay = '1') then
+																			
 				if(clock1Hz'event and clock1Hz='1') then
 					contDecSeg := contDecSeg + 1;
-					if(contDecSeg = 59) then
+					if(contDecSeg = 99) then
 						contDecSeg :=0;
 						contSegundos := contSegundos + 1;
 							if(contSegundos = 59) then
@@ -84,6 +99,7 @@ architecture hardware of cronometro is
 						   end if;
 						end if;
 					end if;
+				
 					-- Processo abaixo e utilizado para extrair de um numero inteiro sua dezena e unidade
 					quocienteDecSeg := contDecSeg/10;
 					restoDecSeg 	 := contDecSeg rem 10; -- rem retorna o resto de divisao
@@ -111,8 +127,9 @@ architecture hardware of cronometro is
 					dezenaHoras 		<= conv_std_logic_vector(quocienteHoras, 4);
 					
 				end if;
+			end if;
 				
-				if(rst='1') then
+				if(rst='0' and contPlay = '0') then
 					unidadeDecSeg  	<= "0000";
 					dezenaDecSeg    	<= "0000";
 					
@@ -123,7 +140,13 @@ architecture hardware of cronometro is
 					dezenaMinutos 		<= "0000";
 					
 					unidadeHoras 		<= "0000";
-					dezenaHoras 		<= "0000";				
+					dezenaHoras 		<= "0000";	
+				
+					contDecSeg :=0;							
+					contSegundos := 0;						
+					contMinutos := 0;
+					contHoras := 0;
+					
 				end if;
 				
 		end process CONTADOR_HMSDS;
