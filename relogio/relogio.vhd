@@ -7,6 +7,10 @@ entity relogio is
 	port( 
 	  clockIn, mode, set, reset, startStop, conf : in  std_logic; -- ClockIn e uma entrada 50MHz
 	  --modeAtivo					 							: in  std_logic_vector(1 downto 0); -- estado do botao
+	  
+	  unidade_Minutos, dezena_Minutos : out std_logic_vector(3 downto 0);
+	  unidade_Horas, dezena_Horas		 : out std_logic_vector(3 downto 0);
+	  
 	  DisplayUnidadeSegundos 							: out std_logic_vector(6 downto 0);
 	  DisplayDezenaSegundos  							: out std_logic_vector(6 downto 0);
 	  DisplayUnidadeMinutos	 							: out std_logic_vector(6 downto 0);
@@ -149,4 +153,9 @@ architecture hardware of relogio is
 		
 		DisplayHEX0 <= "1111111";
 		DisplayHEX1 <= "1111111";
+		
+		unidade_Minutos <= unidadeMinutos;
+		dezena_Minutos	 <= dezenaSegundos; 	
+	   unidade_Horas   <= unidadeHoras; 
+		dezena_Horas	 <= dezenaHoras;
  end hardware;

@@ -1,6 +1,5 @@
 |cronometro
 play => contPlay.CLK
-pause => ~NO_FANOUT~
 rst => CONTADOR_HMSDS.IN1
 clockIn => clock1Hz.CLK
 clockIn => \DF:contagem[0].CLK

@@ -8,10 +8,9 @@ use ieee.std_logic_unsigned.all;
 entity cronometro is
 	port(
 	  play                   : in std_logic; -- Inicia/Pausa a contagem
-	  pause                  : in std_logic; -- Só para testar o pause
 	  rst    				    : in std_logic; -- Zera o cronômetro
 	  
-	  cronometro_ON_OFF		 :	in std_logic; -- 1 = on, 2 = off
+	  --cronometro_ON_OFF		 :	in std_logic; -- 1 = on, 2 = off
 	  
 	  clockIn    				 : in std_logic; -- Clock de entrada 50MHz
 	  
@@ -49,6 +48,7 @@ architecture hardware of cronometro is
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeHoras, dezenaHoras			: std_logic_vector(3 downto 0) := "0000";
 	signal contPlay : std_logic;
+	
 	begin
 	  
 	--Divisor de frequencia de 50 MHz para 1 Hz.
@@ -73,10 +73,6 @@ architecture hardware of cronometro is
 			
 			-- saber quantas vezes o botão play foi apertado
 		   if(play'EVENT and play='0') then
---				contPlay := contPlay +1;
---				if(contPlay = 2) then
---					contPlay:=0;
---				end if;
 				contPlay <= NOT(contPlay);
 			end if;
 			
