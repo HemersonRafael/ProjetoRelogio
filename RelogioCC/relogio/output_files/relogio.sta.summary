@@ -2,19 +2,19 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'clock1Hz'
-Slack : -12.178
-TNS   : -371.286
+Type  : Slow Model Setup 'clockOutDF'
+Slack : -8.108
+TNS   : -214.100
 
 Type  : Slow Model Setup 'clockIn'
-Slack : -5.112
-TNS   : -99.639
+Slack : -4.932
+TNS   : -98.787
 
 Type  : Slow Model Hold 'clockIn'
-Slack : -2.536
-TNS   : -2.536
+Slack : -2.496
+TNS   : -2.496
 
-Type  : Slow Model Hold 'clock1Hz'
+Type  : Slow Model Hold 'clockOutDF'
 Slack : 0.391
 TNS   : 0.000
 
@@ -22,23 +22,23 @@ Type  : Slow Model Minimum Pulse Width 'clockIn'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Slow Model Minimum Pulse Width 'clock1Hz'
+Type  : Slow Model Minimum Pulse Width 'clockOutDF'
 Slack : -0.500
-TNS   : -54.000
+TNS   : -44.000
 
-Type  : Fast Model Setup 'clock1Hz'
-Slack : -4.693
-TNS   : -133.189
+Type  : Fast Model Setup 'clockOutDF'
+Slack : -2.951
+TNS   : -69.843
 
 Type  : Fast Model Setup 'clockIn'
-Slack : -1.843
-TNS   : -29.556
+Slack : -1.751
+TNS   : -29.017
 
 Type  : Fast Model Hold 'clockIn'
-Slack : -1.577
-TNS   : -1.577
+Slack : -1.542
+TNS   : -1.542
 
-Type  : Fast Model Hold 'clock1Hz'
+Type  : Fast Model Hold 'clockOutDF'
 Slack : 0.215
 TNS   : 0.000
 
@@ -46,8 +46,8 @@ Type  : Fast Model Minimum Pulse Width 'clockIn'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Fast Model Minimum Pulse Width 'clock1Hz'
+Type  : Fast Model Minimum Pulse Width 'clockOutDF'
 Slack : -0.500
-TNS   : -54.000
+TNS   : -44.000
 
 ------------------------------------------------------------

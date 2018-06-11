@@ -26,13 +26,11 @@ architecture hardware of relogio is
 		  segmentos	: out std_logic_vector (6 downto 0)-- vetor de saida que vai receber o valor de entrada representando em 7 bits
 		);
 	end component;
-	signal clock1Hzb 								: std_logic 						 := '0';
-	signal clock1Hz 								: std_logic 						 := '0';
+	signal clockOutDF 								: std_logic 						 := '0';
 	signal unidadeSegundos, dezenaSegundos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeHoras, dezenaHoras			: std_logic_vector(3 downto 0) := "0000";
-	signal estadoSet : integer range 0 to 2  := 0;
-	
+
 	begin
 	  
 	--Divisor de frequencia de 50 MHz para 1 Hz.
@@ -42,24 +40,24 @@ architecture hardware of relogio is
 				if(clockIn'event and clockIn='1') then
 					contagem := contagem + 1;
 					if(contagem = 2500000) then
-					  clock1Hz <= not clock1Hz;
+					  clockOutDF <= not clockOutDF;
 					  contagem := 1;
 					end if;
 				end if;
 	  end process DF;
 	  
 	-- Contador de horas, minutos e segundos
-		CONTADOR_HMS : process(clock1Hz,mode,set,reset,startStop,conf)   -- Periodo de 1 segundo.
-			variable contDecSegundos, contSegundos, contMinutos, contHoras : integer range 0 to 100 :=0;
+		CONTADOR_HMS : process(clockOutDF,mode,set,reset,startStop,conf)
+			variable contBlink : integer range 0 to 10 :=0;
+			variable contSegundos, contMinutos : integer range 0 to 59 :=0;
+			variable contHoras : integer range 0 to 23 :=0;
 			variable quocienteDecSegundos, restoDecSegundo,quocienteSegundos, restoSegundo, quocienteMinutos, restoMinutos, quocienteHoras, restoHoras : integer range 0 to 9 :=0;
-			variable   estadoMode, estadoConf : integer range 0 to 2  := 0;
-			
+			variable   estadoSet, estadoMode, estadoConf : integer range 0 to 1  := 0;
 			begin
-				if(clock1Hz'event and clock1Hz='1') then
-					contDecSegundos := contDecSegundos + 1;
-					
-					if(contDecSegundos=10) then
-						contDecSegundos := 0;
+				if(clockOutDF'event and clockOutDF='1') then
+					contBlink := contBlink + 1;
+					if(contBlink=10) then
+						contBlink := 0;
 						contSegundos := contSegundos + 1;
 						if(contSegundos = 60) then
 							contSegundos := 0;
@@ -73,14 +71,13 @@ architecture hardware of relogio is
 							end if;
 						end if;
 					end if;
-					if(conf = '1' and (contDecSegundos rem 2)= 0 ) then
+					if(conf = '1' and (contBlink rem 2)= 0 ) then
 							if(set = '0') then
-								estadoSet <= estadoSet + 1;
+								estadoSet := estadoSet + 1;
 								if( estadoSet = 2) then
-									estadoSet <= 0;
+									estadoSet := 0;
 								end if;
 							end if;
-							
 							
 							if(estadoSet = 0) then
 								unidadeHoras	 <= "1111";
@@ -106,14 +103,15 @@ architecture hardware of relogio is
 								end if;
 								if(reset = '0') then
 									contMinutos :=  0;
-								end if;
-								
+								end if;	
+							else
+									estadoSet := 0;								
 							end if;
 						
 					else
---						if(estadoSet >= 1 and conf = '0' ) then
---							estadoSet := 0;
---						end if;
+						if(conf /= '1') then
+							estadoSet := 0;
+						end if;
 						-- Processo abaixo e utilizado para extrair de um numero inteiro sua dezena e unidade
 						quocienteSegundos := contSegundos/10;
 						restoSegundo 		:= contSegundos rem 10; -- rem retorna o resto de divisao
