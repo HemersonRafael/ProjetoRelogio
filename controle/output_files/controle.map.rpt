@@ -1,5 +1,5 @@
 Analysis & Synthesis report for controle
-Sun Jun 10 23:17:16 2018
+Tue Jun 12 23:29:54 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -10,7 +10,14 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +43,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Jun 10 23:17:16 2018          ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 12 23:29:54 2018      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; controle                                   ;
 ; Top-level Entity Name              ; controle                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 63                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -144,9 +151,253 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; relogio.vhd                      ; yes             ; User VHDL File  ; G:/Nova pasta/ProjetoRelogioDigital-master/controle/relogio.vhd        ;         ;
+; cronometro.vhd                   ; yes             ; User VHDL File  ; G:/Nova pasta/ProjetoRelogioDigital-master/controle/cronometro.vhd     ;         ;
+; conversor_7seg.vhd               ; yes             ; User VHDL File  ; G:/Nova pasta/ProjetoRelogioDigital-master/controle/conversor_7seg.vhd ;         ;
+; controle.vhd                     ; yes             ; User VHDL File  ; G:/Nova pasta/ProjetoRelogioDigital-master/controle/controle.vhd       ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 63    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |controle                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 63   ; 0            ; |controle           ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++-----------------------------------------------------+---------------------------------------------+
+; Register name                                       ; Reason for Removal                          ;
++-----------------------------------------------------+---------------------------------------------+
+; contMode[0]                                         ; Stuck at GND due to stuck port data_in      ;
+; contMode[1]                                         ; Lost fanout                                 ;
+; modeClick[0,1]                                      ; Stuck at GND due to stuck port data_in      ;
+; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[0..6] ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[0..6]  ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[0..6]    ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|unidadeDecSeg[0..3]                ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|dezenaDecSeg[0..3]                 ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|unidadeSegundos[0..3]              ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|dezenaSegundos[0..3]               ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|unidadeMinutos[0..3]               ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|dezenaMinutos[0..3]                ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|unidadeHoras[0..3]                 ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|dezenaHoras[0..3]                  ; Stuck at GND due to stuck port clock_enable ;
+; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[0..6]   ; Stuck at GND due to stuck port clock_enable ;
+; relogio:RELOG|unidadeSegundos[0..3]                 ; Lost fanout                                 ;
+; relogio:RELOG|dezenaSegundos[0..3]                  ; Lost fanout                                 ;
+; relogio:RELOG|unidadeMinutos[0..3]                  ; Lost fanout                                 ;
+; relogio:RELOG|dezenaMinutos[0..3]                   ; Lost fanout                                 ;
+; relogio:RELOG|unidadeHoras[0..3]                    ; Lost fanout                                 ;
+; relogio:RELOG|dezenaHoras[0..3]                     ; Lost fanout                                 ;
+; cronometro:CRONO|clockOutDF                         ; Lost fanout                                 ;
+; cronometro:CRONO|contstartStop                      ; Lost fanout                                 ;
+; relogio:RELOG|\CONTADOR_HMS:contSegundos[0..5]      ; Lost fanout                                 ;
+; relogio:RELOG|\CONTADOR_HMS:contBlink[0..3]         ; Lost fanout                                 ;
+; relogio:RELOG|clockOutDF                            ; Lost fanout                                 ;
+; relogio:RELOG|\CONTADOR_HMS:estadoSet               ; Lost fanout                                 ;
+; relogio:RELOG|\CONTADOR_HMS:contMinutos[0..5]       ; Lost fanout                                 ;
+; relogio:RELOG|\CONTADOR_HMS:contHoras[0..4]         ; Lost fanout                                 ;
+; cronometro:CRONO|\DF:contagem[0..31]                ; Lost fanout                                 ;
+; relogio:RELOG|\DF:contagem[0..31]                   ; Lost fanout                                 ;
+; DisplayHEX0[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX0[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX1[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX2[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX3[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX4[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX5[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX6[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[0]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[1]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[2]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[3]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[4]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[5]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; DisplayHEX7[6]~reg0                                 ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 233             ;                                             ;
++-----------------------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                        ;
++----------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                    ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++----------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; contMode[0]                      ; Stuck at GND              ; contMode[1], modeClick[0], modeClick[1],                                            ;
+;                                  ; due to stuck port data_in ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[6],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[5],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[4],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[3],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[2],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[1],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contSegundos[0],                                   ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[6],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[5],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[4],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[3],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[2],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[1],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contMinutos[0],                                    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[6],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[5],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[4],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[3],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[2],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[1],                                      ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contHoras[0], cronometro:CRONO|unidadeDecSeg[3],   ;
+;                                  ;                           ; cronometro:CRONO|unidadeDecSeg[2], cronometro:CRONO|unidadeDecSeg[1],               ;
+;                                  ;                           ; cronometro:CRONO|unidadeDecSeg[0], cronometro:CRONO|dezenaDecSeg[3],                ;
+;                                  ;                           ; cronometro:CRONO|dezenaDecSeg[2], cronometro:CRONO|dezenaDecSeg[1],                 ;
+;                                  ;                           ; cronometro:CRONO|dezenaDecSeg[0], cronometro:CRONO|unidadeSegundos[3],              ;
+;                                  ;                           ; cronometro:CRONO|unidadeSegundos[2], cronometro:CRONO|unidadeSegundos[1],           ;
+;                                  ;                           ; cronometro:CRONO|unidadeSegundos[0], cronometro:CRONO|dezenaSegundos[3],            ;
+;                                  ;                           ; cronometro:CRONO|dezenaSegundos[2], cronometro:CRONO|dezenaSegundos[1],             ;
+;                                  ;                           ; cronometro:CRONO|dezenaSegundos[0], cronometro:CRONO|unidadeMinutos[3],             ;
+;                                  ;                           ; cronometro:CRONO|unidadeMinutos[2], cronometro:CRONO|unidadeMinutos[1],             ;
+;                                  ;                           ; cronometro:CRONO|unidadeMinutos[0], cronometro:CRONO|dezenaMinutos[3],              ;
+;                                  ;                           ; cronometro:CRONO|dezenaMinutos[2], cronometro:CRONO|dezenaMinutos[1],               ;
+;                                  ;                           ; cronometro:CRONO|dezenaMinutos[0], cronometro:CRONO|unidadeHoras[3],                ;
+;                                  ;                           ; cronometro:CRONO|unidadeHoras[2], cronometro:CRONO|unidadeHoras[1],                 ;
+;                                  ;                           ; cronometro:CRONO|unidadeHoras[0], cronometro:CRONO|dezenaHoras[3],                  ;
+;                                  ;                           ; cronometro:CRONO|dezenaHoras[2], cronometro:CRONO|dezenaHoras[1],                   ;
+;                                  ;                           ; cronometro:CRONO|dezenaHoras[0], cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[6],    ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[5],                                     ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[4],                                     ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[3],                                     ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[2],                                     ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[1],                                     ;
+;                                  ;                           ; cronometro:CRONO|\CONTADOR_HMSDS:contDecSeg[0], cronometro:CRONO|contstartStop,     ;
+;                                  ;                           ; relogio:RELOG|\CONTADOR_HMS:contBlink[0], DisplayHEX0[0]~reg0, DisplayHEX0[1]~reg0, ;
+;                                  ;                           ; DisplayHEX0[2]~reg0, DisplayHEX0[3]~reg0, DisplayHEX0[4]~reg0, DisplayHEX0[5]~reg0, ;
+;                                  ;                           ; DisplayHEX0[6]~reg0, DisplayHEX1[0]~reg0, DisplayHEX1[1]~reg0, DisplayHEX1[2]~reg0, ;
+;                                  ;                           ; DisplayHEX1[3]~reg0, DisplayHEX1[4]~reg0, DisplayHEX1[5]~reg0, DisplayHEX1[6]~reg0, ;
+;                                  ;                           ; DisplayHEX2[0]~reg0, DisplayHEX2[1]~reg0, DisplayHEX2[2]~reg0, DisplayHEX2[3]~reg0, ;
+;                                  ;                           ; DisplayHEX2[4]~reg0, DisplayHEX2[5]~reg0, DisplayHEX2[6]~reg0, DisplayHEX3[0]~reg0, ;
+;                                  ;                           ; DisplayHEX3[1]~reg0, DisplayHEX3[2]~reg0, DisplayHEX3[3]~reg0, DisplayHEX3[4]~reg0, ;
+;                                  ;                           ; DisplayHEX3[5]~reg0, DisplayHEX3[6]~reg0, DisplayHEX4[0]~reg0, DisplayHEX4[1]~reg0, ;
+;                                  ;                           ; DisplayHEX4[2]~reg0, DisplayHEX4[3]~reg0, DisplayHEX4[4]~reg0, DisplayHEX4[5]~reg0, ;
+;                                  ;                           ; DisplayHEX4[6]~reg0, DisplayHEX5[0]~reg0, DisplayHEX5[1]~reg0, DisplayHEX5[2]~reg0, ;
+;                                  ;                           ; DisplayHEX5[3]~reg0, DisplayHEX5[4]~reg0, DisplayHEX5[5]~reg0, DisplayHEX5[6]~reg0, ;
+;                                  ;                           ; DisplayHEX6[0]~reg0, DisplayHEX6[1]~reg0, DisplayHEX6[2]~reg0, DisplayHEX6[3]~reg0, ;
+;                                  ;                           ; DisplayHEX6[4]~reg0, DisplayHEX6[5]~reg0, DisplayHEX6[6]~reg0, DisplayHEX7[0]~reg0, ;
+;                                  ;                           ; DisplayHEX7[1]~reg0, DisplayHEX7[2]~reg0, DisplayHEX7[3]~reg0, DisplayHEX7[4]~reg0, ;
+;                                  ;                           ; DisplayHEX7[5]~reg0, DisplayHEX7[6]~reg0                                            ;
+; relogio:RELOG|unidadeSegundos[3] ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contSegundos[5],                                        ;
+;                                  ;                           ; relogio:RELOG|\CONTADOR_HMS:contBlink[1], relogio:RELOG|\CONTADOR_HMS:contBlink[2], ;
+;                                  ;                           ; relogio:RELOG|\CONTADOR_HMS:contBlink[3], relogio:RELOG|clockOutDF                  ;
+; relogio:RELOG|dezenaSegundos[3]  ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contSegundos[4],                                        ;
+;                                  ;                           ; relogio:RELOG|\CONTADOR_HMS:contSegundos[3]                                         ;
+; relogio:RELOG|dezenaMinutos[3]   ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contMinutos[4],                                         ;
+;                                  ;                           ; relogio:RELOG|\CONTADOR_HMS:contMinutos[3]                                          ;
+; relogio:RELOG|unidadeHoras[3]    ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contHoras[4], relogio:RELOG|\CONTADOR_HMS:contHoras[3]  ;
+; relogio:RELOG|unidadeMinutos[3]  ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contMinutos[5]                                          ;
+; relogio:RELOG|dezenaHoras[3]     ; Lost Fanouts              ; relogio:RELOG|\CONTADOR_HMS:contHoras[2]                                            ;
++----------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -155,28 +406,108 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 10 23:17:12 2018
+    Info: Processing started: Tue Jun 12 23:29:50 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controle -c controle
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
+    Info (12022): Found design unit 1: relogio-hardware
+    Info (12023): Found entity 1: relogio
+Info (12021): Found 2 design units, including 1 entities, in source file cronometro.vhd
+    Info (12022): Found design unit 1: cronometro-hardware
+    Info (12023): Found entity 1: cronometro
+Info (12021): Found 2 design units, including 1 entities, in source file conversor_7seg.vhd
+    Info (12022): Found design unit 1: conversor_7seg-hardware
+    Info (12023): Found entity 1: conversor_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file alarme.vhd
+    Info (12022): Found design unit 1: alarme-hardware
+    Info (12023): Found entity 1: alarme
 Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
     Info (12022): Found design unit 1: controle-hardware
     Info (12023): Found entity 1: controle
-Error (10476): VHDL error at controle.vhd(95): type of identifier "mode" does not agree with its usage as "std_logic_vector" type File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10558): VHDL error at controle.vhd(95): cannot associate formal port "DisplayUnidadeSegundos" of mode "out" with an expression File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10476): VHDL error at controle.vhd(95): type of identifier "set" does not agree with its usage as "std_logic_vector" type File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10558): VHDL error at controle.vhd(95): cannot associate formal port "DisplayDezenaSegundos" of mode "out" with an expression File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10476): VHDL error at controle.vhd(95): type of identifier "reset" does not agree with its usage as "std_logic_vector" type File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10558): VHDL error at controle.vhd(95): cannot associate formal port "DisplayUnidadeMinutos" of mode "out" with an expression File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10476): VHDL error at controle.vhd(95): type of identifier "starStop" does not agree with its usage as "std_logic_vector" type File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10558): VHDL error at controle.vhd(95): cannot associate formal port "DisplayDezenaMinutos" of mode "out" with an expression File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10476): VHDL error at controle.vhd(95): type of identifier "conf" does not agree with its usage as "std_logic_vector" type File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10558): VHDL error at controle.vhd(95): cannot associate formal port "DisplayUnidadeHoras" of mode "out" with an expression File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10589): VHDL Port Map Aspect error at controle.vhd(95): too many actuals for block "relogio" with only 9 formals File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 95
-Error (10784): HDL error at controle.vhd(52): see declaration for object "relogio" File: C:/Users/carva/Desktop/ProjetoRelogio_CD/ProjetoRelogioDigital/controle/controle.vhd Line: 52
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 12 errors, 1 warning
-    Error: Peak virtual memory: 4640 megabytes
-    Error: Processing ended: Sun Jun 10 23:17:16 2018
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:04
+Info (12127): Elaborating entity "controle" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at controle.vhd(100): signal "conf" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controle.vhd(98): inferring latch(es) for signal or variable "ledConfig", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "ledConfig" at controle.vhd(98)
+Info (12128): Elaborating entity "relogio" for hierarchy "relogio:RELOG"
+Info (12128): Elaborating entity "conversor_7seg" for hierarchy "relogio:RELOG|conversor_7seg:C7SUS"
+Info (12128): Elaborating entity "cronometro" for hierarchy "cronometro:CRONO"
+Warning (10492): VHDL Process Statement warning at cronometro.vhd(68): signal "modeClickCronometro" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cronometro.vhd(116): signal "modeClickCronometro" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ledConfig" is stuck at VCC
+    Warning (13410): Pin "DisplayHEX0[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX0[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX1[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX2[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX3[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX4[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX5[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX6[6]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[0]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[1]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[2]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[3]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[4]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[5]" is stuck at GND
+    Warning (13410): Pin "DisplayHEX7[6]" is stuck at GND
+Info (17049): 114 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset"
+    Warning (15610): No output dependent on input pin "conf"
+    Warning (15610): No output dependent on input pin "set"
+    Warning (15610): No output dependent on input pin "clockIn"
+    Warning (15610): No output dependent on input pin "starStop"
+    Warning (15610): No output dependent on input pin "mode"
+Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 57 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4664 megabytes
+    Info: Processing ended: Tue Jun 12 23:29:54 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 
