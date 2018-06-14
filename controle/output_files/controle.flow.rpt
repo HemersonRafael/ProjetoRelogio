@@ -1,6 +1,6 @@
 Flow report for controle
-Tue Jun 12 23:30:28 2018
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Thu Jun 14 16:45:00 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 12 23:30:28 2018      ;
-; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
-; Revision Name                      ; controle                                   ;
-; Top-level Entity Name              ; controle                                   ;
-; Family                             ; Cyclone II                                 ;
-; Device                             ; EP2C35F672C6                               ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 0 / 33,216 ( 0 % )                         ;
-;     Total combinational functions  ; 0 / 33,216 ( 0 % )                         ;
-;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                         ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 63 / 475 ( 13 % )                          ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 483,840 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Thu Jun 14 16:45:00 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; controle                                        ;
+; Top-level Entity Name              ; controle                                        ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 1,261 / 33,216 ( 4 % )                          ;
+;     Total combinational functions  ; 1,257 / 33,216 ( 4 % )                          ;
+;     Dedicated logic registers      ; 201 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 201                                             ;
+; Total pins                         ; 68 / 475 ( 14 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/12/2018 23:29:51 ;
+; Start date & time ; 06/14/2018 16:44:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; controle            ;
 +-------------------+---------------------+
@@ -75,9 +75,10 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 70465359724804.152885699111632        ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 35719348726778.152900544701176        ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
@@ -94,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4664 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 4899 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 4576 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4528 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 511 MB              ; 00:00:09                           ;
+; Fitter                    ; 00:00:29     ; 1.0                     ; 674 MB              ; 00:00:28                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 421 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 414 MB              ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 382 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:47     ; --                      ; --                  ; 00:00:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,11 +109,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-K529CP5  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-K529CP5  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-K529CP5  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-K529CP5  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-K529CP5  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Hemerson-PC      ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; Hemerson-PC      ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; Hemerson-PC      ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Hemerson-PC      ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; Hemerson-PC      ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

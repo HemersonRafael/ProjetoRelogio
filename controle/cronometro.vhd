@@ -31,12 +31,12 @@ architecture hardware of cronometro is
 		);
 	end component;
 	
-	signal clockOutDF 								: std_logic 						 :='0';
+	signal clockOutDF 							: std_logic 						 := '0';
 	signal unidadeDecSeg, dezenaDecSeg	   : std_logic_vector(3 downto 0) := "0000";
 	signal unidadeSegundos, dezenaSegundos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeMinutos, dezenaMinutos	: std_logic_vector(3 downto 0) := "0000";
 	signal unidadeHoras, dezenaHoras			: std_logic_vector(3 downto 0) := "0000";
-	signal contstartStop : std_logic;
+	signal contstartStop 						: std_logic;
 	
 	begin
 	  
@@ -54,18 +54,18 @@ architecture hardware of cronometro is
 	  end process DF;
 	  
 	-- Contador de horas, minutos e segundos
-		CONTADOR_HMSDS : process(clockOutDF, startStop,reset, contstartStop)   -- Periodo de 1 segundo.
+		CONTADOR_HMSDS : process(clockOutDF, startStop,reset, contstartStop, modeClickCronometro)   -- Periodo de 1 segundo.
 			variable contDecSeg, contSegundos, contMinutos, contHoras : integer range 0 to 99 :=0;
 			
 			variable quocienteDecSeg, restoDecSeg, quocienteSegundos, restoSegundo, quocienteMinutos, restoMinutos, quocienteHoras, restoHoras : integer range 0 to 9 :=0;
 			begin
 			
 			-- saber quantas vezes o botão startStop foi apertado
-		   if(startStop'EVENT and startStop='0') then
+		   if(startStop'EVENT and startStop='0' and modeClickCronometro = "11") then
 				contstartStop <= NOT(contstartStop);
 			end if;
 			
-			if(contstartStop = '1' and modeClickCronometro = "10") then																
+			if(contstartStop = '1' and modeClickCronometro = "11") then																
 				if(clockOutDF'event and clockOutDF='1') then
 					contDecSeg := contDecSeg + 1;
 					if(contDecSeg = 99) then
@@ -113,7 +113,7 @@ architecture hardware of cronometro is
 				end if;
 			end if;
 			
-			if(reset='0' and contstartStop = '0' and modeClickCronometro = "10") then
+			if(reset='0' and contstartStop = '0' and modeClickCronometro = "11") then
 				unidadeDecSeg  	<= "0000";
 				dezenaDecSeg    	<= "0000";
 				
